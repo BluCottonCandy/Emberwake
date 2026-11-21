@@ -1,5 +1,7 @@
 # Emberwake
 
+![Emberwake banner showing a lamplit medieval town at dusk](Resources/Textures/Logo/Emberwake/banner.png)
+
 Emberwake is an independent medieval fantasy roleplay server forked from the archived CrystallPunk 14 version of CrystallEdge. Players can study magic, brew potions, and join guilds on Comoss Island. The game runs on RobustToolbox, the engine developed by the Space Wizards Federation for Space Station 14.
 
 [Original CrystallPunk 14 release](https://github.com/crystallpunk-14/crystall-punk-14/tree/5b6108377e40235c768be3ac6ffadb37a085f441) · [RobustToolbox](https://github.com/space-wizards/RobustToolbox) · [Space Station 14](https://github.com/space-wizards/space-station-14)

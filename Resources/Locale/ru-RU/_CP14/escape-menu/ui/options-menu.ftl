@@ -18,5 +18,5 @@ cp14-ui-options-postprocess-tooltip =
 
 ## Controls menu
 
-ui-options-header-cp14 = CrystallEdge
+ui-options-header-cp14 = Emberwake
 ui-options-function-cp14-open-knowledge-menu = Открыть меню знаний персонажа

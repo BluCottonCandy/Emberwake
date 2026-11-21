@@ -18,7 +18,7 @@ cp14-ui-options-postprocess-tooltip =
 
 ## Controls menu
 
-ui-options-header-cp14 = CrystallEdge
+ui-options-header-cp14 = Emberwake
 ui-options-function-cp14-open-skill-menu = Open character knowledge menu.
 ui-options-function-open-belt2 = Open belt 2
 ui-options-function-smart-equip-belt2 = Smart-equip to belt 2
