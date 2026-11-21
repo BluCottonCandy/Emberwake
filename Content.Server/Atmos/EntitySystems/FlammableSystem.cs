@@ -60,6 +60,7 @@ namespace Content.Server.Atmos.EntitySystems
         private float _timer;
 
         private readonly Dictionary<Entity<FlammableComponent>, float> _fireEvents = new();
+        private readonly List<Entity<FlammableComponent>> _fireTickEntities = new();
 
         public override void Initialize()
         {
@@ -444,10 +445,17 @@ namespace Content.Server.Atmos.EntitySystems
 
             _timer -= UpdateTime;
 
-            // TODO: This needs cleanup to take off the crust from TemperatureComponent and shit.
+            // Fire damage can destroy structures and spawn flammable debris during this tick.
+            _fireTickEntities.Clear();
             var query = EntityQueryEnumerator<FlammableComponent, TransformComponent>();
             while (query.MoveNext(out var uid, out var flammable, out _))
+                _fireTickEntities.Add((uid, flammable));
+
+            foreach (var (uid, flammable) in _fireTickEntities)
             {
+                if (flammable.Deleted || TerminatingOrDeleted(uid) || IsPaused(uid))
+                    continue;
+
                 // Slowly dry ourselves off if wet.
                 if (flammable.FireStacks < 0)
                 {
