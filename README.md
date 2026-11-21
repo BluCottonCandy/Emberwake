@@ -1,9 +1,8 @@
-![image](https://github.com/user-attachments/assets/8b564d44-66c8-4c97-a3fe-99c2554a6cbf)
+# Emberwake
 
-CrystallEdge is a build running on the [RobustToolbox](https://github.com/space-wizards/RobustToolbox), engine, developed by [Space Wizard Federation](https://github.com/space-wizards). It is based on the original build of [Space Station 14](https://github.com/space-wizards/space-station-14), and rewritten into a new game.
+Emberwake is an independent medieval fantasy roleplay server forked from the archived CrystallPunk 14 version of CrystallEdge. Players can study magic, brew potions, and join guilds on Comoss Island. The game runs on RobustToolbox, the engine developed by the Space Wizards Federation for Space Station 14.
 
-## Links
-[Discord](https://discord.gg/Sud2DMfhCC) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Boosty](https://boosty.to/theshued)
+[Original CrystallPunk 14 release](https://github.com/crystallpunk-14/crystall-punk-14/tree/5b6108377e40235c768be3ac6ffadb37a085f441) · [RobustToolbox](https://github.com/space-wizards/RobustToolbox) · [Space Station 14](https://github.com/space-wizards/space-station-14)
 
 ## Building
 
