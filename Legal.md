@@ -1,32 +1,37 @@
-# Disclaimer
-- The information presented here is for informational purposes only and does not constitute legal advice, nor is it a replacement for reading license text. If there is a conflict between this text and any of the attached licenses/agreements, or other agreements with CrystallEdge those agreements take precedence.
+# Emberwake licensing and attribution
 
-## To contribute you or your legal guardian (or employer if they have a legal right to your contributions) must agree to the [CrystallEdge Contributor Agreement](https://github.com/crystallpunk-14/crystall-punk-14/blob/master/CLA.md) 
+## Code contributions
 
-This process is automated, with a bot prompting you to agree to the CLA when you open your first PR. This may also be done by sending an email with the subject "\<your name\> CA Agreement", with a signed version of the agreement.
+[Commit `11a59be0c9`](https://github.com/BluCottonCandy/Emberwake/commit/11a59be0c932596486cdd9b9f18f562b52cc7b2d), which merged the structure fire fix, is the licensing cutoff. Code already present at that commit keeps the licenses granted for it. Historical releases retain their applicable terms.
 
-Non-legalese summary of the terms of this agreement (This is not a replacement for reading the agreement):
-- __*You keep your copyright for <u>your contribution*__, and **Non-exclusively** grant us *the same rights to use your contribution*. Please note this does not grant you any rights to *the project as a whole* outside of those specified in the project license.
-- The CLA only applies to *your original contributions*, not works submitted under an approved license or other negotiated license.
-- You have a legal right to attribution (moral rights) in the credits of the project, please tell us if you wish to opt out of being displayed in the credits or wish to use an alternative name.
-- If you patent or have patented any parts of your contribution, you give us the right to those use those patents in respect to the project.
-- As much as possible, you are protected from legal liability for contributing (This does not protect you against copyright infringement liability).
-- Any legal proceedings related to the CLA will be governed by Russian law.
-- The CLA may be amended with 30 days of notice by email. *If you do not agree to the new CLA your contributions will be kept under the old version.*
+By submitting original code to Emberwake after that cutoff, you license your contribution under the [GNU Affero General Public License, version 3 only](LICENSE-AGPLv3.txt) (`AGPL-3.0-only`). You retain your copyright. This default covers both new files and original changes to existing files.
 
-# Licensing/Attribution:
-- Unless specified otherwise, all Source Code, inside any **\_CP14 or CP14 folders**, fall under the terms specified in LICENSE_CE.TXT *with Exhibit B enforced* and the [CrystallEdge CLA](https://github.com/crystallpunk-14/crystall-punk-14/blob/master/CLA.md). All assets/content in those folders fall under CC-BY-SA 4.0.
-- Any content from SpaceWizards/SpaceStation14 without specified licensing of any code is licensed under MIT (LICENSE.TXT). Any Space Wizards content licensed under CC-BY-SA to Space Wizards Federation & Contributors.
-- __**You may not use CrystallEdge code/content (All right reserved). This is to make sure that CrystallEdge code is available to be improved by the community.**__
-- **We are in the process of removing/replacing content that is currently not under an approved license.**
+When editing an inherited file, preserve the copyright and license notices for the existing code. When bringing in third-party code, identify its source and license, retain its notices, and check that its terms permit use in the combined project.
 
-# Approved licenses:
-The following licenses are permitted to be used in this project if you are not the original copyright owner:
+## Inherited code, including `_CP14` and `CP14`
+
+In its [MIT licensing commit](https://github.com/crystallpunk-14/crystall-punk-14/commit/95b4b05574b32d887188b801be5d3f9aedee3c83), CrystallPunk released its content code under [MIT](LICENSE.TXT), removed `LICENSE_CE.TXT`, and removed the workflow that requested the CrystallEdge contributor agreement. This MIT release includes upstream-authored code in the `_CP14` and `CP14` directories. Specific third-party licenses and copyright notices still apply to the material they cover. Dependencies such as RobustToolbox carry their own licenses.
+
+The [CrystallEdge contributor agreement](CLA.md) is retained as a historical upstream document. The contribution terms above apply to new Emberwake code.
+
+## Running a modified server
+
+Section 13 of the [AGPLv3](LICENSE-AGPLv3.txt) requires operators of a modified, AGPL-covered server to prominently offer players its corresponding source at no charge. A visible link to the source and build scripts for the exact deployed version can provide that access.
+
+## Sprites, music, maps, and other assets
+
+Asset licenses are independent of the code cutoff. Use the license and credits recorded with each asset (`meta.json`, `attributions.yml`, or a specific notice). The archived README describes most assets as CC BY-SA 3.0. Its [asset notice for `_CP14` and `CP14`](https://github.com/crystallpunk-14/crystall-punk-14/blob/5b6108377e40235c768be3ac6ffadb37a085f441/Legal.md#licensingattribution) specifies CC BY-SA 4.0 unless otherwise stated. Check the original source when an asset's terms are unclear.
+
+## Third-party material
+
+The following licenses are accepted for material sourced from other authors.
+
 - The following Creative Commons 4.0 (or later) licenses: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.en), [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.en), [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/legalcode.en), (ND licenses are discouraged, but accepted) or an earlier version with *permission from the author*.
 - [The MIT License](https://opensource.org/license/MIT)
 - Public domain content under [CC0](https://creativecommons.org/public-domain/cc0/), etc. NOTE: The absence of a copyright mark means **all rights reserved** *not* public domain, public domain must be explicitly marked/stated. Attribution is still required for public domain works.
 
-# Attribution/Sourcing Requirements:
+### Asset attribution and sourcing
+
 - All assets *must* be properly licensed, attributed, and include the original title of the work. This also requires a link to the original author, and license and if needed provides a way to contact the author.
 - For audio files especially: **you must find the actual author not just a YouTube channel**. <u>If you cannot find the author/original license you cannot use the asset.</u> Failure to be able to provide sourcing information will result in your PR being closed and potentially barring from future contributions depending on the severity of the situation.
 - License versioning is important, make sure to include the correct version of the license in your attribution. If a version is not specified by the author with a versioned license, that is not a valid license and cannot be used.
