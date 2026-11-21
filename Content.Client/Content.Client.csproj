@@ -6,6 +6,7 @@
     <IsPackable>false</IsPackable>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>..\bin\Content.Client\</OutputPath>
+    <ApplicationIcon>..\Resources\Textures\Logo\Emberwake\emberwake.ico</ApplicationIcon>
     <OutputType Condition="'$(FullRelease)' != 'True'">Exe</OutputType>
     <WarningsAsErrors>RA0032;nullable</WarningsAsErrors>
     <Nullable>enable</Nullable>

@@ -66,6 +66,8 @@
             <PanelContainer Name="RightSide" Access="Public" StyleClasses="AngleRect" HorizontalAlignment="Right" VerticalExpand="True"
                             VerticalAlignment="Stretch">
                 <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+                    <TextureRect TexturePath="/Textures/Logo/Emberwake/wordmark.png" CanShrink="True"
+                                 HorizontalAlignment="Center" SetSize="210 45" Stretch="KeepAspectCentered" />
                     <!-- Top row -->
                     <BoxContainer Orientation="Horizontal" MinSize="0 40" Name="HeaderContainer" Access="Public"
                                   SeparationOverride="4">
