@@ -16,7 +16,7 @@ Emberwake is an independent medieval fantasy roleplay server forked from the arc
 
 ## License
 
-All code for the content repository is licensed under the [MIT license](https://github.com/crystallpunk-14/crystall-punk-14/blob/master/LICENSE.TXT).  
+New original code contributed to Emberwake after [commit `11a59be0c9`](https://github.com/BluCottonCandy/Emberwake/commit/11a59be0c932596486cdd9b9f18f562b52cc7b2d) is licensed under the [GNU Affero General Public License, version 3 only](LICENSE-AGPLv3.txt) (`AGPL-3.0-only`). Earlier code keeps its existing licenses, including the [MIT license](LICENSE.TXT). See [licensing and attribution](Legal.md) for inherited code, third-party notices, and asset terms.
 
 Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and copyright specified in the metadata file. For example, see the [metadata for a crowbar](https://github.com/crystallpunk-14/crystall-punk-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).  
 

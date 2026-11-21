@@ -1,3 +1,5 @@
+<!-- New original Emberwake code contributions use AGPL-3.0-only. Preserve license and attribution notices for imported code and assets. See Legal.md. -->
+
 ## About the PR
 <!-- What did you change in this PR? -->
 
