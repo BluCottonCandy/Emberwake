@@ -117,12 +117,13 @@ public sealed partial class CP14CurrencySystem
 
     private void OnInteractUsing(Entity<CP14CurrencyConverterComponent> ent, ref InteractUsingEvent args)
     {
-        if (!_tag.HasTag(args.Used, ent.Comp.CoinTag))
+        if (args.Handled || !_tag.HasTag(args.Used, ent.Comp.CoinTag))
             return;
 
         if (ent.Comp.Whitelist is not null && !_whitelist.IsValid(ent.Comp.Whitelist, args.Used))
             return;
 
+        args.Handled = true;
         var delta = _price.GetPrice(args.Used);
         ent.Comp.Balance += (int)delta;
         QueueDel(args.Used);
