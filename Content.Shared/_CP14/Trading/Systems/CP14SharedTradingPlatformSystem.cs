@@ -14,7 +14,6 @@ namespace Content.Shared._CP14.Trading.Systems;
 
 public abstract partial class CP14SharedTradingPlatformSystem : EntitySystem
 {
-    [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
     [Dependency] protected readonly IPrototypeManager Proto = default!;
     [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
@@ -24,7 +23,6 @@ public abstract partial class CP14SharedTradingPlatformSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        InitializeUI();
 
         SubscribeLocalEvent<CP14TradingReputationComponent, MapInitEvent>(OnReputationMapInit);
         SubscribeLocalEvent<CP14TradingContractComponent, UseInHandEvent>(OnContractUse);
@@ -52,7 +50,8 @@ public abstract partial class CP14SharedTradingPlatformSystem : EntitySystem
         args.Handled = true;
 
         var repComp = EnsureComp<CP14TradingReputationComponent>(args.User);
-        repComp.Reputation.TryAdd(ent.Comp.Faction, 0);
+        if (repComp.Reputation.TryAdd(ent.Comp.Faction, 0))
+            Dirty(args.User, repComp);
         _audio.PlayLocal(new SoundCollectionSpecifier("CP14CoinImpact"), args.User, args.User);
         _popup.PopupClient(Loc.GetString("cp14-trading-contract-use", ("name", Loc.GetString(indexedFaction.Name))), args.User, args.User);
 
@@ -67,10 +66,8 @@ public abstract partial class CP14SharedTradingPlatformSystem : EntitySystem
         if (!Proto.TryIndex(position, out var indexedPosition))
             return false;
 
-        if (user.Comp.Reputation[indexedPosition.Faction] < indexedPosition.ReputationLevel)
-            return false;
-
-        return true;
+        return user.Comp.Reputation.TryGetValue(indexedPosition.Faction, out var reputation)
+            && reputation >= indexedPosition.ReputationLevel;
     }
 
     public void AddReputation(Entity<CP14TradingReputationComponent?> user,

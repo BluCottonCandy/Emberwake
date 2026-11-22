@@ -27,13 +27,15 @@ public sealed partial class CP14BuyItemsService : CP14StoreBuyService
     public override string GetName(IPrototypeManager protoMan)
     {
         if (!protoMan.TryIndex(Product, out var indexedProduct))
-            return ":3";
+            return Product.ToString();
 
         var count = Count;
         if (indexedProduct.TryGetComponent<StackComponent>(out var stack))
             count *= stack.Count;
 
-        return Count > 0 ? $"{indexedProduct.Name} x{count}" : indexedProduct.Name;
+        return count > 1
+            ? Loc.GetString("cp14-catalogue-bundle", ("item", indexedProduct.Name), ("count", count))
+            : indexedProduct.Name;
     }
 
     public override string GetDesc(IPrototypeManager protoMan)

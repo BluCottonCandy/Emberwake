@@ -1,0 +1,10 @@
+<ContainerButton xmlns="https://spacestation14.io" StyleClasses="button" ToggleMode="True" MinHeight="42">
+    <BoxContainer SeparationOverride="8" Margin="3 1" MouseFilter="Ignore">
+        <TextureRect Name="Art" SetSize="36 36" Stretch="KeepAspectCentered" />
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="0">
+            <Label Name="ItemName" ClipText="True" FontColorOverride="#f0e7d5" />
+            <Label Name="Supplier" ClipText="True" StyleClasses="LabelSubText" />
+        </BoxContainer>
+        <Label Name="Price" FontColorOverride="#eac98b" />
+    </BoxContainer>
+</ContainerButton>

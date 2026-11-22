@@ -1,89 +1,70 @@
 <DefaultWindow xmlns="https://spacestation14.io"
-               xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-               xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
-               xmlns:parallax="clr-namespace:Content.Client.Parallax"
-               xmlns:nodeTree="clr-namespace:Content.Client._CP14.UserInterface.Systems.NodeTree"
-               Name="Window"
-               Title="{Loc 'cp14-trading-ui-title'}"
-               MinSize="1200 800"
-               SetSize="1200 800">
-
-    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
-        <!-- Selected Location -->
-        <BoxContainer Margin="10 10 10 10" MaxWidth="340" SetWidth="340" Orientation="Vertical"
-                      HorizontalExpand="False" VerticalExpand="True">
-            <!-- Location View -->
-            <PanelContainer Name="BackPanel" HorizontalAlignment="Center">
+               xmlns:g="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+               Title="{Loc 'cp14-catalogue-title'}" MinSize="650 400" SetSize="840 555">
+    <BoxContainer Orientation="Vertical" SeparationOverride="8" Margin="7">
+        <PanelContainer>
+            <PanelContainer.PanelOverride>
+                <g:StyleBoxFlat BackgroundColor="#243b36" />
+            </PanelContainer.PanelOverride>
+            <BoxContainer Margin="12 5" SeparationOverride="10">
+                <TextureRect Name="WalletArt"
+                             SetSize="38 38" Stretch="KeepAspectCentered" />
+                <Label Text="{Loc 'cp14-catalogue-stock'}" StyleClasses="LabelHeadingBigger"
+                       FontColorOverride="#f2deb4" HorizontalExpand="True" />
+                <Label Text="{Loc 'cp14-catalogue-funds'}" FontColorOverride="#c7d8ca" />
+                <BoxContainer Name="FundsHolder" VerticalAlignment="Center" />
+            </BoxContainer>
+        </PanelContainer>
+        <BoxContainer SeparationOverride="7">
+            <LineEdit Name="Search" PlaceHolder="{Loc 'cp14-catalogue-search'}" HorizontalExpand="True" />
+            <Button Name="ClearSearch" Text="{Loc 'cp14-catalogue-clear'}" Disabled="True" />
+            <OptionButton Name="Suppliers" MinWidth="155" MaxWidth="240" />
+            <CheckBox Name="AvailableOnly" Text="{Loc 'cp14-catalogue-available'}" />
+        </BoxContainer>
+        <BoxContainer VerticalExpand="True" SeparationOverride="9">
+            <PanelContainer HorizontalExpand="True">
                 <PanelContainer.PanelOverride>
-                    <graphics:StyleBoxTexture Modulate="#1B1B1E" PatchMarginBottom="10" PatchMarginLeft="10"
-                                              PatchMarginRight="10" PatchMarginTop="10" />
+                    <g:StyleBoxFlat BackgroundColor="#1b2426" />
                 </PanelContainer.PanelOverride>
-                <BoxContainer HorizontalExpand="True" VerticalExpand="True">
-                    <TextureRect Stretch="Scale" Name="LocationView" SetSize="64 64" HorizontalAlignment="Center"
-                                 VerticalAlignment="Center" MinSize="64 64"
-                                 HorizontalExpand="True" VerticalExpand="True" Access="Public" />
+                <BoxContainer Orientation="Vertical" Margin="5" SeparationOverride="4">
+                    <Label Name="Results" StyleClasses="LabelSubText" Margin="5 1" FontColorOverride="#c8c5b7" />
+                    <RichTextLabel Name="NoResults" Margin="6 8" Visible="False" />
+                    <ScrollContainer Name="StockScroll" HScrollEnabled="False" VerticalExpand="True">
+                        <BoxContainer Name="Stock" Orientation="Vertical" HorizontalExpand="True" SeparationOverride="3" />
+                    </ScrollContainer>
                 </BoxContainer>
             </PanelContainer>
-            <customControls:HSeparator StyleClasses="HighDivider" Margin="0 15 0 10" />
-            <!-- Location Data -->
-            <BoxContainer Name="NodeViewContainer" Orientation="Vertical" VerticalExpand="True">
-                <ScrollContainer HScrollEnabled="False" HorizontalExpand="True" VerticalExpand="True">
-                    <BoxContainer Orientation="Vertical" HorizontalExpand="False" VerticalExpand="True">
-                        <BoxContainer Name="InfoContainer" Orientation="Vertical" HorizontalExpand="True"
-                                      VerticalExpand="True">
-                            <BoxContainer HorizontalExpand="True">
-                                <Label Name="Name" Access="Public" StyleClasses="LabelHeadingBigger" VAlign="Center"
-                                       HorizontalExpand="True" HorizontalAlignment="Center" />
-                            </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" HorizontalAlignment="Center">
-                                <TextureRect VerticalAlignment="Center" Margin="20 0 5 0" HorizontalAlignment="Left" TextureScale="2, 2" TexturePath="/Textures/_CP14/Interface/Misc/star.png"/>
-                                <RichTextLabel  Name="UnlockCost" Access="Public" Text="0"/>
-                            </BoxContainer>
-                            <!-- Description -->
-                            <BoxContainer HorizontalExpand="True">
-                                <RichTextLabel Name="Description" HorizontalExpand="True" Access="Public" />
-                            </BoxContainer>
+            <PanelContainer SetWidth="240">
+                <PanelContainer.PanelOverride>
+                    <g:StyleBoxFlat BackgroundColor="#303331" />
+                </PanelContainer.PanelOverride>
+                <BoxContainer Name="Details" Orientation="Vertical" Margin="12" SeparationOverride="6" Visible="False">
+                    <ScrollContainer HScrollEnabled="False" VerticalExpand="True">
+                        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SeparationOverride="6">
+                            <PanelContainer MinHeight="86">
+                                <PanelContainer.PanelOverride>
+                                    <g:StyleBoxFlat BackgroundColor="#222b29" />
+                                </PanelContainer.PanelOverride>
+                                <TextureRect Name="ItemArt" SetSize="72 72" HorizontalAlignment="Center"
+                                             VerticalAlignment="Center" Stretch="KeepAspectCentered" TextureScale="2 2" />
+                            </PanelContainer>
+                            <RichTextLabel Name="ItemName" StyleClasses="LabelHeadingBigger" />
+                            <RichTextLabel Name="ItemSupplier" />
+                            <RichTextLabel Name="ItemDescription" Margin="0 3" />
+                            <RichTextLabel Name="Reputation" StyleClasses="LabelSubText" />
                         </BoxContainer>
+                    </ScrollContainer>
+                    <PanelContainer StyleClasses="LowDivider" MinHeight="1" />
+                    <BoxContainer>
+                        <Label Text="{Loc 'cp14-catalogue-price'}" HorizontalExpand="True" />
+                        <BoxContainer Name="PriceHolder" />
                     </BoxContainer>
-                </ScrollContainer>
-                <Control MinHeight="5" />
-                <customControls:HSeparator StyleClasses="HighDivider" Margin="0 15 0 10" />
-
-                <!-- Buttons -->
-                <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-                    <BoxContainer Name="BuyBox" Orientation="Horizontal" HorizontalExpand="True" Visible="True">
-                        <Button Name="BuyButton" Text="{Loc 'cp14-trading-ui-button-buy'}"
-                                ToolTip="{Loc 'cp14-trading-ui-button-buy-tooltip'}" StyleClasses="OpenRight"
-                                HorizontalExpand="True" MinHeight="35" Access="Public"/>
-                        <BoxContainer Orientation="Horizontal">
-                            <BoxContainer SetWidth="100" Name="BuyPriceHolder" VerticalAlignment="Center" HorizontalExpand="True" HorizontalAlignment="Center" />
-                        </BoxContainer>
-                    </BoxContainer>
-                </BoxContainer>
-            </BoxContainer>
-        </BoxContainer>
-
-        <customControls:VSeparator StyleClasses="LowDivider" />
-
-        <!-- Trading positions map Tree -->
-        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
-            <BoxContainer HorizontalExpand="True">
-                <Label Name="TreeName" Access="Public" StyleClasses="LabelHeadingBigger" VAlign="Center"
-                       HorizontalExpand="True" HorizontalAlignment="Center" />
-            </BoxContainer>
-            <PanelContainer Margin="10 10 10 10" HorizontalExpand="True" VerticalExpand="True" RectClipContent="True">
-                <parallax:ParallaxControl Name="ParallaxBackground" ScaleX="4" ScaleY="4"
-                                          ParallaxPrototype="KettleStation" Access="Public" SpeedX="10" SpeedY="5" />
-                <BoxContainer Margin="10 10 10 10" Orientation="Horizontal" HorizontalExpand="True"
-                              VerticalExpand="True">
-                    <nodeTree:CP14NodeTreeGraphControl Name="GraphControl" HorizontalAlignment="Stretch"
-                                                       VerticalAlignment="Stretch" Access="Public" />
-                </BoxContainer>
-                <!-- Tree Tabs -->
-                <BoxContainer Margin="10 10 10 10" VerticalAlignment="Top" HorizontalAlignment="Right" Orientation="Vertical" VerticalExpand="True">
-                    <BoxContainer Name="TreeTabsContainer" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True" Access="Public"/>
+                    <RichTextLabel Name="BuyStatus" />
+                    <Button Name="BuyButton" Text="{Loc 'cp14-trading-ui-button-buy'}" MinHeight="34"
+                            StyleClasses="ButtonColorGreen" Disabled="True" />
                 </BoxContainer>
             </PanelContainer>
         </BoxContainer>
+        <Label Text="{Loc 'cp14-catalogue-payment'}" FontColorOverride="#c6c4b6" StyleClasses="LabelSubText" />
     </BoxContainer>
 </DefaultWindow>
