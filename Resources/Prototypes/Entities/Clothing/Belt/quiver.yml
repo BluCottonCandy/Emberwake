@@ -4,6 +4,8 @@
   name: quiver
   description: Can hold up to 15 arrows, and fits snug around your waist.
   components:
+  - type: Tag
+    tags: [Quiver, WhitelistChameleon]
   - type: Sprite
     sprite: Clothing/Belt/quiver.rsi
     layers:

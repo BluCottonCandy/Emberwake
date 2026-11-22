@@ -263,8 +263,9 @@ public abstract partial class InventorySystem
         var fittingInPocket = slotDefinition.SlotFlags.HasFlag(SlotFlags.POCKET) &&
                               item != null &&
                               _item.GetSizePrototype(item.Size) <= _item.GetSizePrototype(PocketableItemSize);
-        if (clothing == null && !fittingInPocket
-            || clothing != null && !clothing.Slots.HasFlag(slotDefinition.SlotFlags) && !fittingInPocket)
+        var fitsClothing = clothing != null && clothing.Slots.HasFlag(slotDefinition.SlotFlags);
+        if (!fitsClothing && !fittingInPocket &&
+            (item == null || !_whitelistSystem.IsWhitelistPass(slotDefinition.StorageWhitelist, itemUid)))
         {
             reason = "inventory-component-can-equip-does-not-fit";
             return false;

@@ -56,6 +56,12 @@ public sealed partial class SlotDefinition
     /// </summary>
     [DataField("whitelist")] public EntityWhitelist? Whitelist = null;
 
+    /// <summary>Items that may be stowed here regardless of their wearable slots or size.</summary>
+    [DataField] public EntityWhitelist? StorageWhitelist;
+
+    /// <summary>Worn sprite slots to try, in order, when rendering the carried item.</summary>
+    [DataField] public string[]? VisualSlots;
+
     /// <summary>
     ///     Entity blacklist for CanEquip checks.
     /// </summary>

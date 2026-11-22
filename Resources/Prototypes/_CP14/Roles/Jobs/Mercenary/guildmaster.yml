@@ -30,5 +30,5 @@
     back:
     - CP14EnergyCrystalMedium
   equipment:
-    belt: CP14WalletFilledTest
+    pocket1: CP14WalletFilledTest
     keys: CP14KeyRingGuildmaster

@@ -62,15 +62,28 @@
       uiWindowPos: 2,3
       strippingWindowPos: 2,2
       displayName: Cloak
-    # Main hotbar
     - name: belt
       slotTexture: belt
       slotFlags: BELT
-      slotGroup: SecondHotbar
       uiWindowPos: 0,0
       strippingWindowPos: 0,4
       dependsOn: pants
       displayName: Belt
+    - name: belt2
+      slotTexture: belt
+      slotFlags: BELT
+      uiWindowPos: 1,0
+      strippingWindowPos: 2,4
+      dependsOn: pants
+      displayName: Belt
+    # Main hotbar
+    - name: passport
+      slotTexture: id
+      slotFlags: PASSPORT
+      slotGroup: SecondHotbar
+      uiWindowPos: 0,0
+      strippingWindowPos: 0,3
+      displayName: Passport
     - name: keys
       slotTexture: keys
       slotFlags: KEYS
@@ -93,8 +106,11 @@
       slotGroup: SecondHotbar
       uiWindowPos: 0,0
       strippingWindowPos: 1,2
-      displayName: Neck
-      dependsOn: shirt
+      displayName: Weapon sling
+      storageWhitelist:
+        components: [MeleeWeapon, Gun, Blocking]
+        tags: [Quiver]
+      visualSlots: [neck, back, belt, belt2]
     # Right hand
     # Left hand
     - name: pocket1
@@ -115,11 +131,14 @@
       dependsOn: pants
       displayName: Pocket
       stripHidden: true
-    - name: belt2
-      slotTexture: belt
-      slotFlags: BELT
+    - name: weaponBack
+      slotTexture: neck
+      slotFlags: NECK
       slotGroup: MainHotbar
       uiWindowPos: 2,0
-      strippingWindowPos: 2,4
-      dependsOn: pants
-      displayName: Belt
+      strippingWindowPos: 2,3
+      displayName: Second weapon sling
+      storageWhitelist:
+        components: [MeleeWeapon, Gun, Blocking]
+        tags: [Quiver]
+      visualSlots: [neck, back, belt2, belt]

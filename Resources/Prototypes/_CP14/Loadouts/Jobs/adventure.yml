@@ -17,14 +17,14 @@
   id: CP14BowCombat
   dummyEntity: CP14BowCombat
   equipment:
-    belt2: CP14ClothingBeltQuiverArrows
+    weaponBack: CP14ClothingBeltQuiverArrows
     neck: CP14BowCombat
 
 - type: loadout
   id: CP14WeaponDaggerIron
   dummyEntity: CP14WeaponDaggerIron
   equipment:
-    belt2: CP14WeaponDaggerIron
+    weaponBack: CP14WeaponDaggerIron
   storage:
     back:
     - CP14WeaponDaggerIron

@@ -15,4 +15,4 @@
     - CP14EnergyCrystalMedium
   equipment:
     keys: CP14BaseKeyRing
-    belt: CP14WalletFilledTest
+    pocket1: CP14WalletFilledTest
