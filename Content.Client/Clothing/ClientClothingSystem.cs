@@ -107,17 +107,28 @@ public sealed class ClientClothingSystem : ClothingSystem
 
         List<PrototypeLayerData>? layers = null;
 
-        // first attempt to get species specific data.
-        if (inventory.SpeciesId != null)
-            item.ClothingVisuals.TryGetValue($"{args.Slot}-{inventory.SpeciesId}", out layers);
-
-        // if that returned nothing, attempt to find generic data
-        if (layers == null && !item.ClothingVisuals.TryGetValue(args.Slot, out layers))
+        bool TryVisualSlot(string slot)
         {
-            // No generic data either. Attempt to generate defaults from the item's RSI & item-prefixes
-            if (!TryGetDefaultVisuals(uid, item, args.Slot, inventory.SpeciesId, out layers))
-                return;
+            return inventory.SpeciesId != null &&
+                    item.ClothingVisuals.TryGetValue($"{slot}-{inventory.SpeciesId}", out layers) ||
+                item.ClothingVisuals.TryGetValue(slot, out layers) ||
+                TryGetDefaultVisuals(uid, item, slot, inventory.SpeciesId, out layers);
         }
+
+        if (_inventorySystem.TryGetSlot(args.Equipee, args.Slot, out var slotDef, inventory) &&
+            slotDef.VisualSlots is {} visualSlots)
+        {
+            foreach (var slot in visualSlots)
+            {
+                if (TryVisualSlot(slot))
+                    break;
+            }
+        }
+        else
+            TryVisualSlot(args.Slot);
+
+        if (layers == null)
+            return;
 
         // add each layer to the visuals
         var i = 0;

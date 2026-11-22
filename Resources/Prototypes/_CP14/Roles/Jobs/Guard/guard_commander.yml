@@ -31,4 +31,4 @@
   id: CP14GuardCommanderGear
   equipment:
     keys: CP14KeyRingGuardCommander
-    belt: CP14WalletFilledTest
+    pocket1: CP14WalletFilledTest

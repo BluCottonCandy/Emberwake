@@ -36,7 +36,7 @@
       collection: CP14Coins
     multiplier: 0.8
   - type: Clothing
-    slots: [belt]
+    slots: [belt, pocket]
   - type: Item
     size: Normal
   - type: Butcherable

@@ -25,4 +25,4 @@
     - CP14EnergyCrystalMedium
   equipment:
     keys: CP14KeyRingGuildworker
-    belt: CP14WalletFilledTest
+    pocket1: CP14WalletFilledTest

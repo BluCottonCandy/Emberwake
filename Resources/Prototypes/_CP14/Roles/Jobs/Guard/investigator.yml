@@ -30,5 +30,5 @@
   id: CP14InvestigatorGear
   equipment:
     keys: CP14KeyRingGuard
-    belt: CP14WalletFilledTest
+    pocket1: CP14WalletFilledTest
 

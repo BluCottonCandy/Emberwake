@@ -5,6 +5,8 @@
   description: Holds many crossbow bolts, and fits snug around your waist.
   categories: [ ForkFiltered ]
   components:
+  - type: Tag
+    tags: [Quiver, WhitelistChameleon]
   - type: Sprite
     sprite: _CP14/Clothing/Belt/quiver.rsi
     layers:

@@ -35,6 +35,7 @@
     - map: [ "belt" ]
     - map: [ "belt2" ]
     - map: [ "neck" ]
+    - map: [ "weaponBack" ]
     - map: [ "back" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]

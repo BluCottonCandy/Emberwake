@@ -5,6 +5,9 @@
   name: passport
   description: Identification document.
   components:
+  - type: Clothing
+    slots: [passport]
+    quickEquip: false
   - type: Paper
   - type: PaperLabelType
   - type: ActivatableUI

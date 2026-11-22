@@ -34,7 +34,7 @@ public sealed class MedievalWeaponVisualsSystem : EntitySystem
 
         var (key, face) = args.Layers[0];
         face.Scale = new Vector2(comp.Scale);
-        if (args.Slot != "back")
+        if (face.State != "equipped-BACKPACK")
             return;
 
         args.BehindBodyLayer = $"{key}-behind";

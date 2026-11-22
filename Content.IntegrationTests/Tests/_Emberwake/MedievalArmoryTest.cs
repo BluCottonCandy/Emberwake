@@ -154,10 +154,13 @@ public sealed class MedievalArmoryTest
             await server.WaitAssertion(() => Assert.That(hands.TryDrop(wearer, sword)));
             await CheckLayers(null, name);
         }
-        await server.WaitAssertion(() => Assert.That(inventory.TryEquip(wearer, sword, "back", silent: true)));
-        await CheckLayers("back-0");
-        await server.WaitAssertion(() => Assert.That(inventory.TryUnequip(wearer, "back", out _, silent: true)));
-        await CheckLayers(null, "back-0");
+        foreach (var slot in new[] { "back", "neck", "weaponBack" })
+        {
+            await server.WaitAssertion(() => Assert.That(inventory.TryEquip(wearer, sword, slot, silent: true)));
+            await CheckLayers($"{slot}-0");
+            await server.WaitAssertion(() => Assert.That(inventory.TryUnequip(wearer, slot, out _, silent: true)));
+            await CheckLayers(null, $"{slot}-0");
+        }
         await pair.CleanReturnAsync();
     }
 

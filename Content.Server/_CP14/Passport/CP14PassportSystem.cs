@@ -42,7 +42,8 @@ public sealed partial class CP14PassportSystem : EntitySystem
                 StampedName = Loc.GetString("cp14-passport-stamp")
             },
             "");
-        _inventory.TryEquip(ev.Mob, passport, "pocket1", inventory: inventory);
+        if (!_inventory.TryEquip(ev.Mob, passport, "passport", silent: true, inventory: inventory))
+            _inventory.TryEquip(ev.Mob, passport, "pocket1", silent: true, inventory: inventory);
     }
 
     private string GeneratePassportText(PlayerSpawnCompleteEvent ev)

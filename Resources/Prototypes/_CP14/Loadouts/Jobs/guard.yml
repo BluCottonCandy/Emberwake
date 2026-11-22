@@ -98,4 +98,4 @@
 - type: loadout
   id: CP14MagicGuardElectroStaff
   equipment:
-    belt2: CP14MagicGuardElectroStaff
+    weaponBack: CP14MagicGuardElectroStaff

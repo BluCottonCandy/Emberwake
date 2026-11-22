@@ -31,6 +31,7 @@ public enum SlotFlags
     SHIRT = 1 << 18, //CP14
     CLOAK = 1 << 19, //CP14
     KEYS = 1 << 20, //CP14
+    PASSPORT = 1 << 21,
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET
