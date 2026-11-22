@@ -27,11 +27,14 @@ public sealed partial class CP14TradingPlatformSystem : CP14SharedTradingPlatfor
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly UserInterfaceSystem _userInterface = default!;
 
+    private TimeSpan _nextFundsUpdate;
+
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<CP14TradingPlatformComponent, CP14TradingPositionBuyAttempt>(OnBuyAttempt);
+        SubscribeLocalEvent<CP14TradingPlatformComponent, BeforeActivatableUIOpenEvent>(OnBeforeBuyingUIOpen);
 
         SubscribeLocalEvent<CP14SellingPlatformComponent, BeforeActivatableUIOpenEvent>(OnBeforeSellingUIOpen);
         SubscribeLocalEvent<CP14SellingPlatformComponent, ItemPlacedEvent>(OnItemPlaced);
@@ -111,8 +114,12 @@ public sealed partial class CP14TradingPlatformSystem : CP14SharedTradingPlatfor
 
     private void OnBuyAttempt(Entity<CP14TradingPlatformComponent> ent, ref CP14TradingPositionBuyAttempt args)
     {
-        TryBuyPosition(args.Actor, ent, args.Position);
-        UpdateTradingUIState(ent, args.Actor);
+        if (TryBuyPosition(args.Actor, ent, args.Position))
+        {
+            var item = GetTradeName(Proto.Index(args.Position));
+            _popup.PopupEntity(Loc.GetString("cp14-catalogue-delivered", ("item", item)), ent, args.Actor);
+        }
+        UpdateBuyingUI(ent);
     }
 
     private void OnBeforeSellingUIOpen(Entity<CP14SellingPlatformComponent> ent, ref BeforeActivatableUIOpenEvent args)
@@ -156,6 +163,51 @@ public sealed partial class CP14TradingPlatformSystem : CP14SharedTradingPlatfor
         return true;
     }
 
+    private void OnBeforeBuyingUIOpen(Entity<CP14TradingPlatformComponent> ent, ref BeforeActivatableUIOpenEvent args)
+    {
+        UpdateBuyingUI(ent);
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+        if (Timing.CurTime < _nextFundsUpdate)
+            return;
+
+        // Stacks can merge or split while their entity stays on the platform.
+        _nextFundsUpdate = Timing.CurTime + TimeSpan.FromSeconds(0.5);
+        var query = EntityQueryEnumerator<CP14TradingPlatformComponent>();
+        while (query.MoveNext(out var uid, out var platform))
+        {
+            if (_userInterface.IsUiOpen(uid, CP14TradingUiKey.Buy))
+                UpdateBuyingUI((uid, platform));
+        }
+    }
+
+    private double GetPlatformFunds(CP14TradingPlatformComponent platform, ItemPlacerComponent placer)
+    {
+        double balance = 0;
+        foreach (var coin in placer.PlacedEntities)
+        {
+            if (!TerminatingOrDeleted(coin) && !EntityManager.IsQueuedForDeletion(coin) && _tag.HasTag(coin, platform.CoinTag))
+                balance += _price.GetPrice(coin);
+        }
+        return balance;
+    }
+
+    private void UpdateBuyingUI(Entity<CP14TradingPlatformComponent> platform)
+    {
+        if (!TryComp<ItemPlacerComponent>(platform, out var placer))
+            return;
+
+        var funds = (int) GetPlatformFunds(platform.Comp, placer);
+        if (_userInterface.TryGetUiState<CP14TradingPlatformUiState>(platform.Owner, CP14TradingUiKey.Buy, out var old)
+            && old.Funds == funds)
+            return;
+
+        _userInterface.SetUiState(platform.Owner, CP14TradingUiKey.Buy, new CP14TradingPlatformUiState(GetNetEntity(platform), funds));
+    }
+
     public bool TryBuyPosition(Entity<CP14TradingReputationComponent?> user, Entity<CP14TradingPlatformComponent> platform, ProtoId<CP14TradingPositionPrototype> position)
     {
         if (Timing.CurTime < platform.Comp.NextBuyTime)
@@ -173,16 +225,11 @@ public sealed partial class CP14TradingPlatformSystem : CP14SharedTradingPlatfor
         if (!TryComp<ItemPlacerComponent>(platform, out var itemPlacer))
             return false;
 
-        //Top up balance
-        double balance = 0;
-        foreach (var placedEntity in itemPlacer.PlacedEntities)
-        {
-            if (!_tag.HasTag(placedEntity, platform.Comp.CoinTag))
-                continue;
-            balance += _price.GetPrice(placedEntity);
-        }
+        if (_economy.GetPrice(position) is not { } basePrice)
+            return false;
 
-        var price = _economy.GetPrice(position) * platform.Comp.PlatformMarkupProcent ?? 10000;
+        var balance = GetPlatformFunds(platform.Comp, itemPlacer);
+        var price = basePrice * platform.Comp.PlatformMarkupProcent;
         if (balance < price)
         {
             // Not enough balance to buy the position

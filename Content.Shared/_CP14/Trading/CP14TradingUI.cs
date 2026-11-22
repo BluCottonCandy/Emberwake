@@ -10,9 +10,10 @@ public enum CP14TradingUiKey
 }
 
 [Serializable, NetSerializable]
-public sealed class CP14TradingPlatformUiState(NetEntity platform) : BoundUserInterfaceState
+public sealed class CP14TradingPlatformUiState(NetEntity platform, int funds) : BoundUserInterfaceState
 {
-    public NetEntity Platform = platform;
+    public readonly NetEntity Platform = platform;
+    public readonly int Funds = funds;
 }
 
 [Serializable, NetSerializable]
