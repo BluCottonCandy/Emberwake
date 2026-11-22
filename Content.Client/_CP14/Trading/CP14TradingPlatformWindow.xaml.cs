@@ -153,7 +153,7 @@ public sealed partial class CP14TradingPlatformWindow : DefaultWindow
         var selectedIndex = 0;
         foreach (var faction in _proto.EnumeratePrototypes<CP14TradingFactionPrototype>()
                      .Where(f => _reputations.ContainsKey(f.ID))
-                     .OrderBy(f => Loc.GetString(f.Name), StringComparer.CurrentCultureIgnoreCase))
+                     .OrderBy(f => Loc.GetString(f.Name)))
         {
             Suppliers.AddItem(Loc.GetString(faction.Name));
             var index = Suppliers.ItemCount - 1;
@@ -186,9 +186,9 @@ public sealed partial class CP14TradingPlatformWindow : DefaultWindow
             .Select(p => (Position: p, Name: _trading.GetTradeName(p), Supplier: Loc.GetString(_proto.Index(p.Faction).Name),
                 Unlocked: _reputations[p.Faction] >= p.ReputationLevel, Price: Price(p)))
             .OrderByDescending(x => x.Unlocked)
-            .ThenBy(x => x.Name, StringComparer.CurrentCultureIgnoreCase)
-            .ThenBy(x => x.Supplier, StringComparer.CurrentCultureIgnoreCase)
-            .ThenBy(x => x.Position.ID, StringComparer.Ordinal);
+            .ThenBy(x => x.Name)
+            .ThenBy(x => x.Supplier)
+            .ThenBy(x => x.Position.ID);
 
         foreach (var entry in listings)
         {
