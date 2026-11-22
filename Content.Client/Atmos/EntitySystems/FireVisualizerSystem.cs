@@ -49,7 +49,8 @@ public sealed class FireVisualizerSystem : VisualizerSystem<FireVisualsComponent
         if (component.Sprite != null)
             SpriteSystem.LayerSetRsi((uid, sprite), FireVisualLayers.Fire, new ResPath(component.Sprite));
 
-        UpdateAppearance(uid, component, sprite, appearance);
+        // A newly replicated burning entity cannot parent its light until initialization finishes.
+        AppearanceSystem.QueueUpdate(uid, appearance);
     }
 
     protected override void OnAppearanceChange(EntityUid uid, FireVisualsComponent component, ref AppearanceChangeEvent args)
