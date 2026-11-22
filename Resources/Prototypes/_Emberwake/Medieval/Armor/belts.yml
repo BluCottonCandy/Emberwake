@@ -1,0 +1,125 @@
+- type: entity
+  abstract: true
+  parent: ClothingBeltStorageBase
+  id: EWClothingBeltMedievalBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      belt2:
+      - state: equipped-BELT
+  - type: Storage
+    whitelist:
+      tags:
+      - CP14Arrow
+      - CP14CrossbowBolt
+      - CP14BigCrossbowBolt
+      - EWMedievalMusketAmmo
+      - CP14Vial
+      components:
+      - Healing
+      - CartridgeAmmo
+  - type: Appearance
+
+- type: entity
+  abstract: true
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalToolBase
+  components:
+  - type: Storage
+    whitelist:
+      tags:
+      - CP14Arrow
+      - CP14CrossbowBolt
+      - CP14BigCrossbowBolt
+      - EWMedievalMusketAmmo
+      - CP14Vial
+      - CP14Scissors
+      components:
+      - Healing
+      - CartridgeAmmo
+      - Tool
+
+- type: entity
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalBaldricPouched
+  categories: [ ForkFiltered ]
+  name: pouched leather baldric
+  description: A leather strap across the chest, hung with pouches for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/baldric_pouched.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/baldric_pouched.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalLeatherBandolier
+  categories: [ ForkFiltered ]
+  name: leather bandolier
+  description: A single leather bandolier with a row of pouches for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/leather_bandolier.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/leather_bandolier.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalToolBase
+  id: EWClothingBeltMedievalCraftsmanBelt
+  categories: [ ForkFiltered ]
+  name: craftsman's belt
+  description: A sturdy waist belt with loops and pouches for tools, ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/craftsman_belt.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/craftsman_belt.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalPouchHarnessAzure
+  categories: [ ForkFiltered ]
+  name: azure pouch harness
+  description: Blue-dyed straps over both shoulders, hung with pouches for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/pouch_harness_azure.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/pouch_harness_azure.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalShoulderHarness
+  categories: [ ForkFiltered ]
+  name: leather shoulder harness
+  description: Leather straps over both shoulders with pouches for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/shoulder_harness.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/shoulder_harness.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalToolBase
+  id: EWClothingBeltMedievalSmithBelt
+  categories: [ ForkFiltered ]
+  name: smith's belt
+  description: A heavy knotted waist belt with loops for a smith's tools, and room for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/smith_belt.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/smith_belt.rsi
+
+- type: entity
+  parent: EWClothingBeltMedievalBase
+  id: EWClothingBeltMedievalCrossedBaldricCrimson
+  categories: [ ForkFiltered ]
+  name: crimson crossed baldric
+  description: Two leather straps crossed over the chest, trimmed in crimson and hung with pouches for ammunition and medicine.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Belt/crossed_baldric_crimson.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Belt/crossed_baldric_crimson.rsi

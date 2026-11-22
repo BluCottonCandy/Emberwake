@@ -26,6 +26,9 @@ namespace Content.Shared.Hands
 
         public readonly HandLocation Location;
 
+        /// <summary>Optional layer drawn beneath the holder for poses using the far hand.</summary>
+        public string? BehindBodyLayer;
+
         /// <summary>
         ///     The layers that will be added to the entity that is holding this item.
         /// </summary>

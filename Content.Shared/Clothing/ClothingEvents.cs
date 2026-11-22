@@ -16,6 +16,9 @@ public sealed class GetEquipmentVisualsEvent : EntityEventArgs
 
     public readonly string Slot;
 
+    /// <summary>Optional layer to draw behind the entire wearer, such as a slung weapon.</summary>
+    public string? BehindBodyLayer;
+
     /// <summary>
     ///     The layers that will be added to the entity that is wearing this item.
     /// </summary>

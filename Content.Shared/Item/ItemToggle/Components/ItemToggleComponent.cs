@@ -13,6 +13,10 @@ namespace Content.Shared.Item.ItemToggle.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class ItemToggleComponent : Component
 {
+    /// <summary>Automatically activate on wield and deactivate on unwield.</summary>
+    [DataField]
+    public bool ToggleOnWield = true;
+
     /// <summary>
     ///     The item's toggle state.
     /// </summary>

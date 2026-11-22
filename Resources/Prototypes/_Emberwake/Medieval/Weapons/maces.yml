@@ -1,0 +1,480 @@
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSpikedClub
+  categories: [ ForkFiltered ]
+  name: "spiked club"
+  description: "A club with nails driven through the head."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/spiked_club.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/spiked_club_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/spiked_club_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalStuddedClub
+  categories: [ ForkFiltered ]
+  name: "studded club"
+  description: "A heavy club bound with iron studs."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/studded_club.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/studded_club_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/studded_club_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalWoodenClub
+  categories: [ ForkFiltered ]
+  name: "wooden club"
+  description: "A thick stick, thicker at one end."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/wooden_club.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/wooden_club_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/wooden_club_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalHolyWaterSprinkler
+  categories: [ ForkFiltered ]
+  name: "holy water sprinkler"
+  description: "A spiked club named for the blood it sprinkles. A militia favourite."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/holy_water_sprinkler.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/holy_water_sprinkler_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/holy_water_sprinkler_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 27
+        Structural: 9
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalCudgel
+  categories: [ ForkFiltered ]
+  name: "cudgel"
+  description: "A short weighted club with a wrist loop."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/cudgel.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/cudgel_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/cudgel_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalIronWarHammer
+  categories: [ ForkFiltered ]
+  name: "iron war hammer"
+  description: "A one-handed hammer with a spike behind the head."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/iron_war_hammer.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/iron_war_hammer_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/iron_war_hammer_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 27
+        Structural: 9
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalFlangedMace
+  categories: [ ForkFiltered ]
+  name: "flanged mace"
+  description: "A mace with steel flanges that bite through armour."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/flanged_mace.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/flanged_mace_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/flanged_mace_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalMorningStar
+  categories: [ ForkFiltered ]
+  name: "morning star"
+  description: "A spiked steel ball on a short haft."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/morning_star.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/morning_star_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/morning_star_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSteelWarHammer
+  categories: [ ForkFiltered ]
+  name: "steel war hammer"
+  description: "A steel war hammer with a long spike on the back."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/steel_war_hammer.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/steel_war_hammer_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/steel_war_hammer_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalShestopyor
+  categories: [ ForkFiltered ]
+  name: "shestopyor"
+  description: "A Russian six-flanged mace, a symbol of command."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/shestopyor.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/shestopyor_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/shestopyor_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 33
+        Structural: 11
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSilverWarHammer
+  categories: [ ForkFiltered ]
+  name: "silver war hammer"
+  description: "A war hammer with a silvered head."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/silver_war_hammer.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/silver_war_hammer_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/silver_war_hammer_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 180
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBuzdygan
+  categories: [ ForkFiltered ]
+  name: "buzdygan"
+  description: "A Polish flanged mace with a long haft."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/buzdygan.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/buzdygan_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/buzdygan_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalPernach
+  categories: [ ForkFiltered ]
+  name: "pernach"
+  description: "An eastern flanged mace with a hooked pommel."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/pernach.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/pernach_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/pernach_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 30
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalScepter
+  categories: [ ForkFiltered ]
+  name: "ceremonial scepter"
+  description: "A jewelled scepter. Mostly for show, but it is solid metal."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/scepter.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/scepter_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/scepter_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 33
+        Structural: 11
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalElectrifiedMace
+  categories: [ ForkFiltered ]
+  name: "electrified mace"
+  description: "A pre-war riot mace rebuilt with a wasteland battery pack. Use it in hand to switch the charge on; charged hits stun. While charged, a heavy swing knocks everyone it hits to the ground."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/electrified_mace.rsi
+    layers:
+    - state: icon
+      map: [ base ]
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/electrified_mace_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/electrified_mace_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 24
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: ItemToggle
+    toggleOnWield: false
+    soundActivate:
+      path: /Audio/Weapons/egloves.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/egloves.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 20
+        Shock: 6
+    activatedSoundOnHit:
+      path: /Audio/Weapons/egloves.ogg
+  - type: ComponentToggler
+    components:
+    - type: StaminaDamageOnHit
+      damage: 35
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    energy: 1.5
+    color: "#4cff4c"
+  - type: MedievalLook
+    onState: "on"
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MedievalLookVisuals.State:
+        base:
+          icon: { state: icon }
+          "on": { state: "on" }
+  - type: MedievalHeavyAttack
+    knockdown: 2
+  - type: StaticPrice
+    price: 100

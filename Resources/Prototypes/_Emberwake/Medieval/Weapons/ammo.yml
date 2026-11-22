@@ -1,0 +1,59 @@
+- type: Tag
+  id: EWMedievalMusketAmmo
+
+- type: entity
+  parent: BaseItem
+  id: EWMedievalMusketBall
+  categories: [ ForkFiltered ]
+  name: lead musket ball
+  description: A lead ball wrapped in a paper twist of black powder. Bite, pour, ram, fire.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/musket_ball.rsi
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - EWMedievalMusketAmmo
+  - type: CartridgeAmmo
+    proto: EWMedievalMusketBallShot
+    deleteOnSpawn: true
+  - type: StaticPrice
+    price: 6
+
+- type: entity
+  parent: BaseBullet
+  id: EWMedievalMusketBallShot
+  categories: [ HideSpawnMenu ]
+  name: musket ball
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Blunt: 30
+        Structural: 20
+  - type: StaminaDamageOnCollide
+    damage: 30
+
+- type: entity
+  parent: BaseBullet
+  id: EWMedievalLuggedSpearBolt
+  categories: [ HideSpawnMenu ]
+  name: bolt of light
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/lugged_spear_bolt.rsi
+    layers:
+    - state: bolt
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 1.5
+    color: "#fff3b0"
+  - type: Projectile
+    damage:
+      types:
+        Heat: 18
+        Piercing: 12
