@@ -301,12 +301,14 @@ public sealed class ClientClothingSystem : ClothingSystem
                 continue;
             }
 
-            if (slotLayerExists)
+            int visualIndex;
+            if (slotLayerExists || key == ev.BehindBodyLayer)
             {
                 index++;
+                visualIndex = key == ev.BehindBodyLayer ? 0 : index;
                 // note that every insertion requires reshuffling & remapping all the existing layers.
-                _sprite.AddBlankLayer((equipee, sprite), index);
-                _sprite.LayerMapSet((equipee, sprite), key, index);
+                _sprite.AddBlankLayer((equipee, sprite), visualIndex);
+                _sprite.LayerMapSet((equipee, sprite), key, visualIndex);
 
                 if (layerData.Color != null)
                     _sprite.LayerSetColor((equipee, sprite), key, layerData.Color.Value);
@@ -314,9 +316,9 @@ public sealed class ClientClothingSystem : ClothingSystem
                     _sprite.LayerSetScale((equipee, sprite), key, layerData.Scale.Value);
             }
             else
-                index = _sprite.LayerMapReserve((equipee, sprite), key);
+                visualIndex = _sprite.LayerMapReserve((equipee, sprite), key);
 
-            if (sprite[index] is not Layer layer)
+            if (sprite[visualIndex] is not Layer layer)
                 continue;
 
             // In case no RSI is given, use the item's base RSI as a default. This cuts down on a lot of unnecessary yaml entries.
@@ -328,7 +330,7 @@ public sealed class ClientClothingSystem : ClothingSystem
                 _sprite.LayerSetRsi(layer, clothingSprite.BaseRSI);
             }
 
-            _sprite.LayerSetData((equipee, sprite), index, layerData);
+            _sprite.LayerSetData((equipee, sprite), visualIndex, layerData);
             _sprite.LayerSetOffset(layer, layer.Offset + slotDef.Offset);
 
             if (displacementData is not null)
@@ -337,7 +339,7 @@ public sealed class ClientClothingSystem : ClothingSystem
                 if (layerData.State is not null && inventory.SpeciesId is not null && layerData.State.EndsWith(inventory.SpeciesId))
                     continue;
 
-                if (_displacement.TryAddDisplacement(displacementData, (equipee, sprite), index, key, out var displacementKey))
+                if (_displacement.TryAddDisplacement(displacementData, (equipee, sprite), visualIndex, key, out var displacementKey))
                 {
                     revealedLayers.Add(displacementKey);
                     index++;

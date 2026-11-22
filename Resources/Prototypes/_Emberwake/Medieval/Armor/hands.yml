@@ -1,0 +1,61 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: EWClothingHandsMedievalLeatherGloves
+  categories: [ ForkFiltered ]
+  name: leather gloves
+  description: Plain leather gloves, worn soft from use.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Hands/leather_gloves.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Hands/leather_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: EWClothingHandsMedievalGauntletsCrimson
+  categories: [ ForkFiltered ]
+  name: crimson gauntlets
+  description: Steel-plated gauntlets with crimson cuffs.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Hands/gauntlets_crimson.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Hands/gauntlets_crimson.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingHandsBase
+  id: EWClothingHandsMedievalBlackLeatherGloves
+  categories: [ ForkFiltered ]
+  name: black leather gloves
+  description: Supple gloves of black-dyed leather.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Hands/black_leather_gloves.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Hands/black_leather_gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: EWClothingHandsMedievalPlateGauntletsAzure
+  categories: [ ForkFiltered ]
+  name: azure plate gauntlets
+  description: Fingered gauntlets of blued steel plate.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/Hands/plate_gauntlets_azure.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/Hands/plate_gauntlets_azure.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

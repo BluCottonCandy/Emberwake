@@ -1,0 +1,507 @@
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalHalberd
+  categories: [ ForkFiltered ]
+  name: "halberd"
+  description: "An axe blade, a spike and a hook on a long pole. The soldier's tool for everything."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/halberd.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/halberd_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/halberd_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Piercing: 14
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBecDeFaucon
+  categories: [ ForkFiltered ]
+  name: "bec de faucon"
+  description: "A polehammer with a falcon's-beak spike."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/bec_de_faucon.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/bec_de_faucon_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/bec_de_faucon_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Piercing: 14
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBill
+  categories: [ ForkFiltered ]
+  name: "bill"
+  description: "A farm billhook grown into a polearm: hook, blade and spike."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/bill.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/bill_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/bill_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 9
+        Piercing: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 27
+        Piercing: 13
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalLeister
+  categories: [ ForkFiltered ]
+  name: "leister"
+  description: "A long fishing spear with barbed prongs."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/leister.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/leister_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/leister_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.85
+    range: 2.0
+    damage:
+      types:
+        Piercing: 12
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 32
+        Slash: 10
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalRhomphaia
+  categories: [ ForkFiltered ]
+  name: "rhomphaia"
+  description: "A Thracian polearm with a long, slightly curved blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/rhomphaia.rsi
+    scale: 0.634, 0.634
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/rhomphaia_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/rhomphaia_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Piercing: 14
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalGlaive
+  categories: [ ForkFiltered ]
+  name: "glaive"
+  description: "A single-edged blade on the end of a pole."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/glaive.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/glaive_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/glaive_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Piercing: 14
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalWarScythe
+  categories: [ ForkFiltered ]
+  name: "war scythe"
+  description: "A scythe blade straightened and fixed to a long pole."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/war_scythe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/war_scythe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/war_scythe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 11
+        Piercing: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 33
+        Piercing: 15
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalPartisan
+  categories: [ ForkFiltered ]
+  name: "partisan"
+  description: "A broad spear head with flared lugs at the base."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/partisan.rsi
+    scale: 0.65, 0.65
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/partisan_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/partisan_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.85
+    range: 2.0
+    damage:
+      types:
+        Piercing: 12
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 32
+        Slash: 10
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalRanseur
+  categories: [ ForkFiltered ]
+  name: "ranseur"
+  description: "A three-pronged polearm. This one has a capacitor in the haft; use it in hand to charge the prongs. While charged, a heavy swing jolts targets off their feet."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/ranseur.rsi
+    scale: 0.6, 0.6
+    layers:
+    - state: icon
+      map: [ base ]
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/ranseur_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/ranseur_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.85
+    range: 2.0
+    damage:
+      types:
+        Piercing: 13
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 35
+        Slash: 11
+  - type: ItemToggle
+    toggleOnWield: false
+    soundActivate:
+      path: /Audio/Weapons/egloves.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Piercing: 13
+        Shock: 11
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 1.5
+    color: "#5ff0ff"
+  - type: MedievalLook
+    onState: "on"
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MedievalLookVisuals.State:
+        base:
+          icon: { state: icon }
+          "on": { state: "on" }
+  - type: MedievalHeavyAttack
+    knockdown: 1
+    slow: 3
+    slowMultiplier: 0.6
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalSilverVoulge
+  categories: [ ForkFiltered ]
+  name: "silver voulge"
+  description: "A silvered cleaver blade on a pole. Use it in hand to flip it and strike with the blunt back. Flipped, a heavy swing hooks and trips everyone it hits."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/silver_voulge.rsi
+    scale: 0.619, 0.619
+    layers:
+    - state: icon
+      map: [ base ]
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/silver_voulge_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/silver_voulge_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+        Piercing: 14
+  - type: ItemToggle
+    toggleOnWield: false
+    soundActivate:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 16
+    activatedSoundOnHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: MedievalLook
+    onState: flip
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MedievalLookVisuals.State:
+        base:
+          icon: { state: icon }
+          flip: { state: flip }
+  - type: MedievalHeavyAttack
+    knockdown: 2
+  - type: StaticPrice
+    price: 180
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalScythe
+  categories: [ ForkFiltered ]
+  name: "scythe"
+  description: "A farmer's scythe. Not made for fighting, but it does."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/scythe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/scythe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/scythe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 9
+        Piercing: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 27
+        Piercing: 13
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBlackenedBecDeFaucon
+  categories: [ ForkFiltered ]
+  name: "blackened bec de faucon"
+  description: "A fire-blackened bec de faucon."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/blackened_bec_de_faucon.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/blackened_bec_de_faucon_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/blackened_bec_de_faucon_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 2.0
+    damage:
+      types:
+        Slash: 12
+        Piercing: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 36
+        Piercing: 17
+  - type: StaticPrice
+    price: 260

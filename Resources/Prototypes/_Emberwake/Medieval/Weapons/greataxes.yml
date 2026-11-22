@@ -1,0 +1,272 @@
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalPollaxe
+  categories: [ ForkFiltered ]
+  name: "pollaxe"
+  description: "An axe blade, a hammer back and a spike on a long haft. A knight's favourite."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/pollaxe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/pollaxe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/pollaxe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 13
+        Blunt: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 42
+        Blunt: 11
+        Structural: 44
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalDoubleBittedGreataxe
+  categories: [ ForkFiltered ]
+  name: "double-bitted greataxe"
+  description: "A greataxe with a blade on both sides of the head."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/double_bitted_greataxe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/double_bitted_greataxe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/double_bitted_greataxe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 12
+        Blunt: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 38
+        Blunt: 10
+        Structural: 40
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalDaneAxe
+  categories: [ ForkFiltered ]
+  name: "Dane axe"
+  description: "A long-hafted Viking axe with a thin, wide blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/dane_axe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/dane_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/dane_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 12
+        Blunt: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 38
+        Blunt: 10
+        Structural: 40
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalLabrys
+  categories: [ ForkFiltered ]
+  name: "labrys"
+  description: "A heavy double-headed axe, very old in design."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/labrys.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/labrys_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/labrys_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 13
+        Blunt: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 42
+        Blunt: 11
+        Structural: 44
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalLochaberAxe
+  categories: [ ForkFiltered ]
+  name: "Lochaber axe"
+  description: "A Scottish poleaxe with a long blade and a hook on the back."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/lochaber_axe.rsi
+    scale: 0.619, 0.619
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/lochaber_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/lochaber_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 11
+        Blunt: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 34
+        Blunt: 9
+        Structural: 36
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalFellingAxe
+  categories: [ ForkFiltered ]
+  name: "felling axe"
+  description: "A woodcutter's two-handed axe. Made for trees, works on doors."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/felling_axe.rsi
+    scale: 0.634, 0.634
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/felling_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/felling_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 11
+        Blunt: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 34
+        Blunt: 9
+        Structural: 36
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBlackenedDaneAxe
+  categories: [ ForkFiltered ]
+  name: "blackened Dane axe"
+  description: "A fire-blackened Dane axe with a wicked bearded blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/blackened_dane_axe.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/blackened_dane_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/blackened_dane_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.75
+    damage:
+      types:
+        Slash: 14
+        Blunt: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 46
+        Blunt: 12
+        Structural: 48
+  - type: StaticPrice
+    price: 260

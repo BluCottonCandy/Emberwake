@@ -1,0 +1,2651 @@
+- type: CP14Recipe
+  id: EWMedievalIronRoundShield
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 5
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalIronRoundShield
+
+- type: CP14Recipe
+  id: EWMedievalPavise
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 8
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalPavise
+
+- type: CP14Recipe
+  id: EWMedievalBuckler
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 2
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalBuckler
+
+- type: CP14Recipe
+  id: EWMedievalKiteShield
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 5
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalKiteShield
+
+- type: CP14Recipe
+  id: EWMedievalHeaterShield
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 5
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalHeaterShield
+
+- type: CP14Recipe
+  id: EWMedievalParadeShield
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 27
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 8
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalParadeShield
+
+- type: CP14Recipe
+  id: EWMedievalLongbow
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 3
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 3
+  result: EWMedievalLongbow
+
+- type: CP14Recipe
+  id: EWMedievalRecurveBow
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 3
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 7
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 3
+  result: EWMedievalRecurveBow
+
+- type: CP14Recipe
+  id: EWMedievalCrossbow
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 6
+  result: EWMedievalCrossbow
+
+- type: CP14Recipe
+  id: EWMedievalFustibalus
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 4
+  - !type:StackResource
+    stack: CP14Leather
+    count: 3
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  result: EWMedievalFustibalus
+
+- type: CP14Recipe
+  id: EWMedievalArquebus
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 15
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 6
+  result: EWMedievalArquebus
+
+- type: CP14Recipe
+  id: EWMedievalArquebusBayonet
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 11
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 16
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 6
+  result: EWMedievalArquebusBayonet
+
+- type: CP14Recipe
+  id: EWMedievalTanegashima
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 22
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 6
+  result: EWMedievalTanegashima
+
+- type: CP14Recipe
+  id: EWMedievalKnuckledusters
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalKnuckledusters
+
+- type: CP14Recipe
+  id: EWMedievalTekkoKagi
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalTekkoKagi
+
+- type: CP14Recipe
+  id: EWMedievalPushDagger
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalPushDagger
+
+- type: CP14Recipe
+  id: EWMedievalHurlbat
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHurlbat
+
+- type: CP14Recipe
+  id: EWMedievalThrowingKnifeIron
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 2
+  result: EWMedievalThrowingKnifeIron
+
+- type: CP14Recipe
+  id: EWMedievalThrowingKnifeSteel
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 2
+  result: EWMedievalThrowingKnifeSteel
+
+- type: CP14Recipe
+  id: EWMedievalThrowingKnifeBlued
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  result: EWMedievalThrowingKnifeBlued
+
+- type: CP14Recipe
+  id: EWMedievalThrowingKnifeSilver
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 1
+  result: EWMedievalThrowingKnifeSilver
+
+- type: CP14Recipe
+  id: EWMedievalShuriken
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 3
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  result: EWMedievalShuriken
+
+- type: CP14Recipe
+  id: EWMedievalMilitaryFlail
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalMilitaryFlail
+
+- type: CP14Recipe
+  id: EWMedievalIronFlail
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalIronFlail
+
+- type: CP14Recipe
+  id: EWMedievalSpikedFlail
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSpikedFlail
+
+- type: CP14Recipe
+  id: EWMedievalSteelFlail
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSteelFlail
+
+- type: CP14Recipe
+  id: EWMedievalScourge
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalScourge
+
+- type: CP14Recipe
+  id: EWMedievalSilverChainFlail
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 4
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverChainFlail
+
+- type: CP14Recipe
+  id: EWMedievalBullwhip
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 4
+  result: EWMedievalBullwhip
+
+- type: CP14Recipe
+  id: EWMedievalChainWhip
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalChainWhip
+
+- type: CP14Recipe
+  id: EWMedievalHuntingKnife
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHuntingKnife
+
+- type: CP14Recipe
+  id: EWMedievalBootKnife
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBootKnife
+
+- type: CP14Recipe
+  id: EWMedievalNavaja
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalNavaja
+
+- type: CP14Recipe
+  id: EWMedievalStiletto
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalStiletto
+
+- type: CP14Recipe
+  id: EWMedievalRondelDagger
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalRondelDagger
+
+- type: CP14Recipe
+  id: EWMedievalTanto
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 4
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalTanto
+
+- type: CP14Recipe
+  id: EWMedievalSilverBaselard
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverBaselard
+
+- type: CP14Recipe
+  id: EWMedievalWoodsmansMachete
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalWoodsmansMachete
+
+- type: CP14Recipe
+  id: EWMedievalButchersCleaver
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalButchersCleaver
+
+- type: CP14Recipe
+  id: EWMedievalSkinningKnife
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSkinningKnife
+
+- type: CP14Recipe
+  id: EWMedievalLongsword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalLongsword
+
+- type: CP14Recipe
+  id: EWMedievalBastardSword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalBastardSword
+
+- type: CP14Recipe
+  id: EWMedievalGreatsword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalGreatsword
+
+- type: CP14Recipe
+  id: EWMedievalZweihander
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalZweihander
+
+- type: CP14Recipe
+  id: EWMedievalGreatMesser
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 15
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalGreatMesser
+
+- type: CP14Recipe
+  id: EWMedievalExecutionersSword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalExecutionersSword
+
+- type: CP14Recipe
+  id: EWMedievalEstoc
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalEstoc
+
+- type: CP14Recipe
+  id: EWMedievalBlackenedFlamberge
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14OreCoal
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalBlackenedFlamberge
+
+- type: CP14Recipe
+  id: EWMedievalFlamberge
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalFlamberge
+
+- type: CP14Recipe
+  id: EWMedievalClaymore
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalClaymore
+
+- type: CP14Recipe
+  id: EWMedievalMontante
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalMontante
+
+- type: CP14Recipe
+  id: EWMedievalSwordOfState
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 11
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 24
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSwordOfState
+
+- type: CP14Recipe
+  id: EWMedievalRapier
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalRapier
+
+- type: CP14Recipe
+  id: EWMedievalSweptHiltRapier
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalSweptHiltRapier
+
+- type: CP14Recipe
+  id: EWMedievalCourtRapier
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalCourtRapier
+
+- type: CP14Recipe
+  id: EWMedievalCupHiltRapier
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalCupHiltRapier
+
+- type: CP14Recipe
+  id: EWMedievalFalchion
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalFalchion
+
+- type: CP14Recipe
+  id: EWMedievalFalx
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalFalx
+
+- type: CP14Recipe
+  id: EWMedievalKatana
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalKatana
+
+- type: CP14Recipe
+  id: EWMedievalShashka
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalShashka
+
+- type: CP14Recipe
+  id: EWMedievalCavalrySabre
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalCavalrySabre
+
+- type: CP14Recipe
+  id: EWMedievalArmingSword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalArmingSword
+
+- type: CP14Recipe
+  id: EWMedievalTachi
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalTachi
+
+- type: CP14Recipe
+  id: EWMedievalSideSword
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalSideSword
+
+- type: CP14Recipe
+  id: EWMedievalPollaxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalPollaxe
+
+- type: CP14Recipe
+  id: EWMedievalDoubleBittedGreataxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 12
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalDoubleBittedGreataxe
+
+- type: CP14Recipe
+  id: EWMedievalDaneAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 12
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalDaneAxe
+
+- type: CP14Recipe
+  id: EWMedievalLabrys
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalLabrys
+
+- type: CP14Recipe
+  id: EWMedievalLochaberAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 12
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalLochaberAxe
+
+- type: CP14Recipe
+  id: EWMedievalFellingAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 12
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalFellingAxe
+
+- type: CP14Recipe
+  id: EWMedievalBlackenedDaneAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14OreCoal
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBlackenedDaneAxe
+
+- type: CP14Recipe
+  id: EWMedievalHandAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHandAxe
+
+- type: CP14Recipe
+  id: EWMedievalWoodsmansAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalWoodsmansAxe
+
+- type: CP14Recipe
+  id: EWMedievalBeardedAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBeardedAxe
+
+- type: CP14Recipe
+  id: EWMedievalBattleAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBattleAxe
+
+- type: CP14Recipe
+  id: EWMedievalBroadAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 7
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBroadAxe
+
+- type: CP14Recipe
+  id: EWMedievalBlackenedWarAxe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 7
+  - !type:StackResource
+    stack: CP14OreCoal
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBlackenedWarAxe
+
+- type: CP14Recipe
+  id: EWMedievalHorsemansPick
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHorsemansPick
+
+- type: CP14Recipe
+  id: EWMedievalFrancisca
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalFrancisca
+
+- type: CP14Recipe
+  id: EWMedievalSilverHatchet
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverHatchet
+
+- type: CP14Recipe
+  id: EWMedievalPoleMace
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalPoleMace
+
+- type: CP14Recipe
+  id: EWMedievalGoedendag
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalGoedendag
+
+- type: CP14Recipe
+  id: EWMedievalBecDeCorbin
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBecDeCorbin
+
+- type: CP14Recipe
+  id: EWMedievalFlangedGreatMace
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalFlangedGreatMace
+
+- type: CP14Recipe
+  id: EWMedievalGreatMaul
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalGreatMaul
+
+- type: CP14Recipe
+  id: EWMedievalSmithsMaul
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSmithsMaul
+
+- type: CP14Recipe
+  id: EWMedievalKanabo
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalKanabo
+
+- type: CP14Recipe
+  id: EWMedievalSpikedWarClub
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSpikedWarClub
+
+- type: CP14Recipe
+  id: EWMedievalSledgehammer
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSledgehammer
+
+- type: CP14Recipe
+  id: EWMedievalSpikedMaul
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 14
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSpikedMaul
+
+- type: CP14Recipe
+  id: EWMedievalGreatWarhammer
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 21
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalGreatWarhammer
+
+- type: CP14Recipe
+  id: EWMedievalHolyWaterSprinkler
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHolyWaterSprinkler
+
+- type: CP14Recipe
+  id: EWMedievalIronWarHammer
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalIronWarHammer
+
+- type: CP14Recipe
+  id: EWMedievalFlangedMace
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalFlangedMace
+
+- type: CP14Recipe
+  id: EWMedievalMorningStar
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalMorningStar
+
+- type: CP14Recipe
+  id: EWMedievalSteelWarHammer
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSteelWarHammer
+
+- type: CP14Recipe
+  id: EWMedievalShestopyor
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalShestopyor
+
+- type: CP14Recipe
+  id: EWMedievalSilverWarHammer
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 4
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverWarHammer
+
+- type: CP14Recipe
+  id: EWMedievalBuzdygan
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBuzdygan
+
+- type: CP14Recipe
+  id: EWMedievalPernach
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalPernach
+
+- type: CP14Recipe
+  id: EWMedievalScepter
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalScepter
+
+- type: CP14Recipe
+  id: EWMedievalElectrifiedMace
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalElectrifiedMace
+
+- type: CP14Recipe
+  id: EWMedievalHalberd
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHalberd
+
+- type: CP14Recipe
+  id: EWMedievalBecDeFaucon
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBecDeFaucon
+
+- type: CP14Recipe
+  id: EWMedievalBill
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBill
+
+- type: CP14Recipe
+  id: EWMedievalLeister
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 7
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 8
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalLeister
+
+- type: CP14Recipe
+  id: EWMedievalRhomphaia
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalRhomphaia
+
+- type: CP14Recipe
+  id: EWMedievalGlaive
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalGlaive
+
+- type: CP14Recipe
+  id: EWMedievalWarScythe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 15
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalWarScythe
+
+- type: CP14Recipe
+  id: EWMedievalPartisan
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 7
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 8
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalPartisan
+
+- type: CP14Recipe
+  id: EWMedievalRanseur
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalRanseur
+
+- type: CP14Recipe
+  id: EWMedievalSilverVoulge
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 7
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 4
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverVoulge
+
+- type: CP14Recipe
+  id: EWMedievalScythe
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalScythe
+
+- type: CP14Recipe
+  id: EWMedievalBlackenedBecDeFaucon
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 15
+  - !type:StackResource
+    stack: CP14OreCoal
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalBlackenedBecDeFaucon
+
+- type: CP14Recipe
+  id: EWMedievalSteelSpear
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSteelSpear
+
+- type: CP14Recipe
+  id: EWMedievalLuggedSpear
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 9
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 18
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalLuggedSpear
+
+- type: CP14Recipe
+  id: EWMedievalFireLance
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalFireLance
+
+- type: CP14Recipe
+  id: EWMedievalJoustingLance
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 7
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 8
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalJoustingLance
+
+- type: CP14Recipe
+  id: EWMedievalSteelShodQuarterstaff
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSteelShodQuarterstaff
+
+- type: CP14Recipe
+  id: EWMedievalHalfPike
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 7
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalHalfPike
+
+- type: CP14Recipe
+  id: EWMedievalSilverShodQuarterstaff
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  - !type:StackResource
+    stack: CP14SilverCoin
+    count: 1
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalSilverShodQuarterstaff
+
+- type: CP14Recipe
+  id: EWMedievalMonksSpade
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 5
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalMonksSpade
+
+- type: CP14Recipe
+  id: EWMedievalShears
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  result: EWMedievalShears
+
+- type: CP14Recipe
+  id: EWMedievalThurible
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 5
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWMedievalThurible
+
+- type: CP14Recipe
+  id: EWMedievalMusketBall
+  tag: CP14RecipeAnvil
+  category: Weapon
+  craftTime: 1
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  - !type:StackResource
+    stack: CP14OreCoal
+    count: 1
+  result: EWMedievalMusketBall
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalJackOfPlatesCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 30
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 60
+  result: EWClothingOuterMedievalJackOfPlatesCrimson
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalCorseletSteel
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 14
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 120
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 25
+  result: EWClothingOuterMedievalCorseletSteel
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalHalfPlateCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 16
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 180
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 45
+  result: EWClothingOuterMedievalHalfPlateCrimson
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalPlateCuirassCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 18
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 250
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 35
+  result: EWClothingOuterMedievalPlateCuirassCrimson
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalKettleHatCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 50
+  - !type:StackResource
+    stack: CP14Leather
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingHeadMedievalKettleHatCrimson
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalKettleHatVisoredCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 50
+  - !type:StackResource
+    stack: CP14Leather
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingHeadMedievalKettleHatVisoredCrimson
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalCloseHelmBarred
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalCloseHelmBarred
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalBarbuteCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 50
+  - !type:StackResource
+    stack: CP14Leather
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingHeadMedievalBarbuteCrimson
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalSalletCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 50
+  - !type:StackResource
+    stack: CP14Leather
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingHeadMedievalSalletCrimson
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalSugarloafHelm
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalSugarloafHelm
+
+- type: CP14Recipe
+  id: EWClothingHandsMedievalLeatherGloves
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingHandsMedievalLeatherGloves
+
+- type: CP14Recipe
+  id: EWClothingHandsMedievalGauntletsCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 30
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingHandsMedievalGauntletsCrimson
+
+- type: CP14Recipe
+  id: EWClothingShoesMedievalRidingBoots
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingShoesMedievalRidingBoots
+
+- type: CP14Recipe
+  id: EWClothingShoesMedievalPlatedBootsCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingShoesMedievalPlatedBootsCrimson
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalJackOfPlatesAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 30
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 60
+  result: EWClothingOuterMedievalJackOfPlatesAzure
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalHalfPlateAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 16
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 180
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 45
+  result: EWClothingOuterMedievalHalfPlateAzure
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalCorseletBrass
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 14
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 120
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 25
+  result: EWClothingOuterMedievalCorseletBrass
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalKettleHatAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalKettleHatAzure
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalKettleHatVisoredAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalKettleHatVisoredAzure
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalCloseHelmBarredAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalCloseHelmBarredAzure
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalBarbuteAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 10
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 90
+  - !type:StackResource
+    stack: CP14Leather
+    count: 15
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 13
+  result: EWClothingHeadMedievalBarbuteAzure
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalArmetGilded
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 50
+  - !type:StackResource
+    stack: CP14Leather
+    count: 10
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingHeadMedievalArmetGilded
+
+- type: CP14Recipe
+  id: EWClothingHandsMedievalBlackLeatherGloves
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingHandsMedievalBlackLeatherGloves
+
+- type: CP14Recipe
+  id: EWClothingHandsMedievalPlateGauntletsAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 60
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingHandsMedievalPlateGauntletsAzure
+
+- type: CP14Recipe
+  id: EWClothingShoesMedievalBlackLeatherBoots
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingShoesMedievalBlackLeatherBoots
+
+- type: CP14Recipe
+  id: EWClothingShoesMedievalSabatonsAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 30
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 5
+  result: EWClothingShoesMedievalSabatonsAzure
+
+- type: CP14Recipe
+  id: EWClothingOuterMedievalKnightHarness
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 25
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 400
+  - !type:StackResource
+    stack: CP14Leather
+    count: 50
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 65
+  result: EWClothingOuterMedievalKnightHarness
+
+- type: CP14Recipe
+  id: EWClothingHeadMedievalKnightSallet
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 150
+  - !type:StackResource
+    stack: CP14Leather
+    count: 20
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 16
+  result: EWClothingHeadMedievalKnightSallet
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalBaldricPouched
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalBaldricPouched
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalLeatherBandolier
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalLeatherBandolier
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalCraftsmanBelt
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalCraftsmanBelt
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalPouchHarnessAzure
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalPouchHarnessAzure
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalShoulderHarness
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalShoulderHarness
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalSmithBelt
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 10
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalSmithBelt
+
+- type: CP14Recipe
+  id: EWClothingBeltMedievalCrossedBaldricCrimson
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 30
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 8
+  result: EWClothingBeltMedievalCrossedBaldricCrimson
+
+- type: CP14Recipe
+  id: EWMedievalWoodenRoundShield
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 6
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 2
+  result: EWMedievalWoodenRoundShield
+
+- type: CP14Recipe
+  id: EWMedievalSling
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 3
+  result: EWMedievalSling
+
+- type: CP14Recipe
+  id: EWMedievalBalearicSling
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 4
+  - !type:StackResource
+    stack: CP14Leather
+    count: 2
+  result: EWMedievalBalearicSling
+
+- type: CP14Recipe
+  id: EWMedievalFlintKnife
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Stone
+    count: 1
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 1
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalFlintKnife
+
+- type: CP14Recipe
+  id: EWMedievalWaster
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  result: EWMedievalWaster
+
+- type: CP14Recipe
+  id: EWMedievalMacuahuitl
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  - !type:StackResource
+    stack: CP14Stone
+    count: 3
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalMacuahuitl
+
+- type: CP14Recipe
+  id: EWMedievalStoneAxe
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Stone
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 2
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalStoneAxe
+
+- type: CP14Recipe
+  id: EWMedievalBoneAxe
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Bone
+    count: 3
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 2
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalBoneAxe
+
+- type: CP14Recipe
+  id: EWMedievalSpikedClub
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  result: EWMedievalSpikedClub
+
+- type: CP14Recipe
+  id: EWMedievalStuddedClub
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 1
+  result: EWMedievalStuddedClub
+
+- type: CP14Recipe
+  id: EWMedievalWoodenClub
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 2
+  result: EWMedievalWoodenClub
+
+- type: CP14Recipe
+  id: EWMedievalCudgel
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 2
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalCudgel
+
+- type: CP14Recipe
+  id: EWMedievalStoneSpear
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Stone
+    count: 1
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalStoneSpear
+
+- type: CP14Recipe
+  id: EWMedievalBoneSpear
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14Bone
+    count: 2
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWMedievalBoneSpear
+
+- type: CP14Recipe
+  id: EWMedievalWalkingStaff
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  result: EWMedievalWalkingStaff
+
+- type: CP14Recipe
+  id: EWMedievalQuarterstaff
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 4
+  result: EWMedievalQuarterstaff
+
+- type: CP14Recipe
+  id: EWMedievalGnarledStaff
+  tag: CP14RecipeWorkbench
+  category: Weapon
+  craftTime: 2
+  requirements:
+  - !type:StackResource
+    stack: CP14WoodenPlanks
+    count: 3
+  result: EWMedievalGnarledStaff

@@ -1,0 +1,100 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: EWMedievalKnuckledusters
+  categories: [ ForkFiltered ]
+  name: "steel knuckledusters"
+  description: "A steel grip that turns a punch into a bone-breaker. Worn on the hands."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/knuckledusters.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+    scale: 1
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/knuckledusters_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/knuckledusters_held.rsi
+    slots: [gloves]
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1.3
+    attackRate: 1.1
+    damage:
+      types:
+        Blunt: 20
+    animation: WeaponArcFist
+    wideAnimation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: StaminaDamageOnHit
+    damage: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: ClothingHandsBase
+  id: EWMedievalTekkoKagi
+  categories: [ ForkFiltered ]
+  name: "tekko-kagi"
+  description: "A pair of iron hand claws strapped over the knuckles. Worn on the hands."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/tekko_kagi.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+    scale: 1
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/tekko_kagi_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/tekko_kagi_held.rsi
+    slots: [gloves]
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1.3
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 20
+        Piercing: 6
+    animation: WeaponArcFist
+    wideAnimation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalPushDagger
+  categories: [ ForkFiltered ]
+  name: "push dagger"
+  description: "A short blade with a T-shaped grip, held in the fist and punched home."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/push_dagger.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/push_dagger_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/push_dagger_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.4
+    damage:
+      types:
+        Piercing: 14
+        Slash: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100

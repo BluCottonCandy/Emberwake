@@ -1,0 +1,175 @@
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalJackOfPlatesCrimson
+  categories: [ ForkFiltered ]
+  name: crimson jack of plates
+  description: A leather coat with small steel plates riveted inside, trimmed in crimson. Light enough to run in.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/jack_of_plates_crimson.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/jack_of_plates_crimson.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalCorseletSteel
+  categories: [ ForkFiltered ]
+  name: steel corselet
+  description: A steel breastplate with heavy shoulder plates, worn over a leather coat. Solid protection that still lets you move.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/corselet_steel.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/corselet_steel.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalHalfPlateCrimson
+  categories: [ ForkFiltered ]
+  name: crimson half-plate
+  description: Steel plate over the chest, belly and shoulders, worn on a crimson-trimmed leather coat. Heavy, and hard to cut through.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/half_plate_crimson.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/half_plate_crimson.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalPlateCuirassCrimson
+  categories: [ ForkFiltered ]
+  name: crimson plate cuirass
+  description: A thick blackened steel cuirass with a great rounded pauldron and a crimson strap. It stops a lot, and you feel every step.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/plate_cuirass_crimson.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/plate_cuirass_crimson.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalJackOfPlatesAzure
+  categories: [ ForkFiltered ]
+  name: azure jack of plates
+  description: A blue-dyed coat with small steel plates riveted inside. Light enough to run in.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/jack_of_plates_azure.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/jack_of_plates_azure.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalHalfPlateAzure
+  categories: [ ForkFiltered ]
+  name: azure half-plate
+  description: Steel plate over the chest, belly and shoulders, worn on a blue coat. Heavy, and hard to cut through.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/half_plate_azure.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/half_plate_azure.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalCorseletBrass
+  categories: [ ForkFiltered ]
+  name: brass-trimmed corselet
+  description: A steel breastplate and shoulder plates edged in brass, worn over leather. Solid protection that still lets you move.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/corselet_brass.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/corselet_brass.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterMedievalKnightHarness
+  categories: [ ForkFiltered ]
+  name: knight's full plate harness
+  description: A complete harness of tempered steel plate, fitted piece by piece over mail and padding. It is brutally heavy and slows every step, but almost nothing gets through it.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/knight_harness.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Armor/OuterClothing/knight_harness.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.45
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8

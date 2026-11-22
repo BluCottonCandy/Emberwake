@@ -1,0 +1,492 @@
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalLongsword
+  categories: [ ForkFiltered ]
+  name: "longsword"
+  description: "A straight double-edged sword with a long grip for both hands."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/longsword.rsi
+    scale: 0.75, 0.75
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/longsword_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/longsword_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.9
+    range: 1.6
+    damage:
+      types:
+        Slash: 16
+        Piercing: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 26
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBastardSword
+  categories: [ ForkFiltered ]
+  name: "bastard sword"
+  description: "A hand-and-a-half sword. Swing it one-handed or grip it in both for real power."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/bastard_sword.rsi
+    scale: 0.75, 0.75
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/bastard_sword_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/bastard_sword_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.9
+    range: 1.6
+    damage:
+      types:
+        Slash: 16
+        Piercing: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 26
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalGreatsword
+  categories: [ ForkFiltered ]
+  name: "greatsword"
+  description: "A huge two-handed sword meant to break up pike blocks."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/greatsword.rsi
+    scale: 0.619, 0.619
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/greatsword_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/greatsword_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 14
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 36
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalZweihander
+  categories: [ ForkFiltered ]
+  name: "zweihänder"
+  description: "A German two-hander taller than some men, with parrying lugs above the guard."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/zweihander.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/zweihander_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/zweihander_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 14
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 36
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalGreatMesser
+  categories: [ ForkFiltered ]
+  name: "great messer"
+  description: "A big single-edged knife-sword with a riveted grip."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/great_messer.rsi
+    scale: 0.75, 0.75
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/great_messer_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/great_messer_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.9
+    range: 1.6
+    damage:
+      types:
+        Slash: 18
+        Piercing: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 29
+        Piercing: 9
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalExecutionersSword
+  categories: [ ForkFiltered ]
+  name: "executioner's sword"
+  description: "A broad, blunt-tipped sword made for one job only."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/executioners_sword.rsi
+    scale: 0.75, 0.75
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/executioners_sword_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/executioners_sword_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 14
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 36
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalEstoc
+  categories: [ ForkFiltered ]
+  name: "estoc"
+  description: "A long, edgeless thrusting sword for punching through mail."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/estoc.rsi
+    scale: 0.75, 0.75
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/estoc_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/estoc_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.9
+    range: 1.75
+    damage:
+      types:
+        Piercing: 14
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 34
+        Slash: 4
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalBlackenedFlamberge
+  categories: [ ForkFiltered ]
+  name: "blackened flamberge"
+  description: "A wavy-bladed greatsword, fire-blackened. The waves tear wounds wide."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/blackened_flamberge.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/blackened_flamberge_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/blackened_flamberge_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 17
+        Blunt: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 43
+        Piercing: 10
+  - type: StaticPrice
+    price: 260
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalFlamberge
+  categories: [ ForkFiltered ]
+  name: "flamberge"
+  description: "A greatsword with a flame-shaped, wavy blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/flamberge.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/flamberge_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/flamberge_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 15
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 40
+        Piercing: 9
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalClaymore
+  categories: [ ForkFiltered ]
+  name: "claymore"
+  description: "A Scottish two-handed broadsword with down-swept guards."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/claymore.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/claymore_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/claymore_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 14
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 36
+        Piercing: 8
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalMontante
+  categories: [ ForkFiltered ]
+  name: "montante"
+  description: "An enormous Iberian two-hander with a slab of a blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/montante.rsi
+    scale: 0.6, 0.6
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/montante_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/montante_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 15
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 40
+        Piercing: 9
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseTwoHanded
+  id: EWMedievalSwordOfState
+  categories: [ ForkFiltered ]
+  name: "sword of state"
+  description: "A gilded ceremonial greatsword. Use it in hand to light the oil-soaked blade; wield it while lit to set it fully ablaze. While lit, a heavy swing sets everyone it hits on fire, twice as fiercely when it blazes in both hands."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/sword_of_state.rsi
+    scale: 0.65, 0.65
+    layers:
+    - state: icon
+      map: [ base ]
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Large
+    sprite: _Emberwake/Medieval/Weapons/sword_of_state_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/sword_of_state_held.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: MeleeWeapon
+    attackRate: 0.8
+    range: 1.75
+    damage:
+      types:
+        Slash: 15
+        Blunt: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 40
+        Piercing: 9
+  - type: ItemToggle
+    toggleOnWield: false
+    soundActivate:
+      path: /Audio/Items/Lighters/lighter1.ogg
+    soundDeactivate:
+      path: /Audio/Items/Lighters/lighter_off.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 15
+        Blunt: 4
+        Heat: 11
+  - type: ComponentToggler
+    components:
+    - type: IgniteOnMeleeHit
+      fireStacks: 1
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    radius: 2.5
+    energy: 2
+    color: "#ff9a3c"
+  - type: MedievalLook
+    onState: lit
+    wieldedOnState: blaze
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MedievalLookVisuals.State:
+        base:
+          icon: { state: icon }
+          lit: { state: lit }
+          blaze: { state: blaze }
+  - type: MedievalHeavyAttack
+    igniteStacks: 2
+    wieldedIgniteStacks: 4
+  - type: StaticPrice
+    price: 200

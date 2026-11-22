@@ -1,0 +1,458 @@
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalFlintKnife
+  categories: [ ForkFiltered ]
+  name: "flint knife"
+  description: "A knapped stone blade lashed to a handle. The oldest tool there is."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/flint_knife.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/flint_knife_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/flint_knife_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Slash: 10
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 8
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalHuntingKnife
+  categories: [ ForkFiltered ]
+  name: "hunting knife"
+  description: "A sturdy fixed-blade knife for dressing game."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/hunting_knife.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/hunting_knife_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/hunting_knife_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Slash: 14
+        Piercing: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 12
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBootKnife
+  categories: [ ForkFiltered ]
+  name: "boot knife"
+  description: "A slim knife made to hide in a boot."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/boot_knife.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/boot_knife_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/boot_knife_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Slash: 14
+        Piercing: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 12
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalNavaja
+  categories: [ ForkFiltered ]
+  name: "navaja"
+  description: "A Spanish folding knife with a locking blade. Use it in hand to flick it open or shut. Open, a heavy slash leaves deep, bleeding cuts."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/navaja.rsi
+    layers:
+    - state: icon
+      map: [ base ]
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/navaja_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/navaja_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Blunt: 2
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: Tag
+    tags:
+    - Knife
+  - type: ItemToggle
+    toggleOnWield: false
+    soundActivate:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Slash: 14
+        Piercing: 8
+    activatedSoundOnHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: MedievalLook
+    onState: open
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.MedievalLookVisuals.State:
+        base:
+          icon: { state: icon }
+          open: { state: open }
+  - type: MedievalHeavyAttack
+    bleed: 4
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalStiletto
+  categories: [ ForkFiltered ]
+  name: "stiletto"
+  description: "A thin, needle-pointed dagger made to slip between armour plates."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/stiletto.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/stiletto_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/stiletto_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.3
+    damage:
+      types:
+        Piercing: 18
+        Slash: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 14
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalRondelDagger
+  categories: [ ForkFiltered ]
+  name: "rondel dagger"
+  description: "A stiff thrusting dagger with disc-shaped guards. A knight's last resort."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/rondel_dagger.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/rondel_dagger_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/rondel_dagger_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.3
+    damage:
+      types:
+        Piercing: 18
+        Slash: 4
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 14
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalTanto
+  categories: [ ForkFiltered ]
+  name: "tantō"
+  description: "A short, slightly curved single-edged blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/tanto.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/tanto_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/tanto_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Slash: 15
+        Piercing: 9
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 13
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSilverBaselard
+  categories: [ ForkFiltered ]
+  name: "silver baselard"
+  description: "A long dagger, nearly a short sword, with a silvered blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/silver_baselard.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/silver_baselard_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/silver_baselard_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.1
+    damage:
+      types:
+        Slash: 24
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 180
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalWoodsmansMachete
+  categories: [ ForkFiltered ]
+  name: "woodsman's machete"
+  description: "A long, heavy brush blade for clearing undergrowth and anything else in the way."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_machete.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_machete_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_machete_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.1
+    damage:
+      types:
+        Slash: 24
+        Piercing: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalButchersCleaver
+  categories: [ ForkFiltered ]
+  name: "butcher's cleaver"
+  description: "A heavy square cleaver for splitting bone."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/butchers_cleaver.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/butchers_cleaver_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/butchers_cleaver_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 20
+        Blunt: 6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSkinningKnife
+  categories: [ ForkFiltered ]
+  name: "skinning knife"
+  description: "A curved knife for separating hide from meat."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/skinning_knife.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Small
+    sprite: _Emberwake/Medieval/Weapons/skinning_knife_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/skinning_knife_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Slash: 14
+        Piercing: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 12
+  - type: MedievalEmbeddedDamage
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: ThrowingAngle
+    angle: 45
+  - type: Tag
+    tags:
+    - Knife
+  - type: StaticPrice
+    price: 100

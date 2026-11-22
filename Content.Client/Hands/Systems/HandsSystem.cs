@@ -302,7 +302,15 @@ namespace Content.Client.Hands.Systems
                     continue;
                 }
 
-                var index = _sprite.LayerMapReserve((ent, sprite), key);
+                int index;
+                if (key == ev.BehindBodyLayer)
+                {
+                    index = 0;
+                    _sprite.AddBlankLayer((ent, sprite), index);
+                    _sprite.LayerMapSet((ent, sprite), key, index);
+                }
+                else
+                    index = _sprite.LayerMapReserve((ent, sprite), key);
 
                 // In case no RSI is given, use the item's base RSI as a default. This cuts down on a lot of unnecessary yaml entries.
                 if (layerData.RsiPath == null

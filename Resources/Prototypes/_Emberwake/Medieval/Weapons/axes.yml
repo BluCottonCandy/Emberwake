@@ -1,0 +1,350 @@
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalStoneAxe
+  categories: [ ForkFiltered ]
+  name: "stone axe"
+  description: "A shaped stone head lashed to a wooden haft."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/stone_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/stone_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/stone_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 17
+        Blunt: 6
+        Structural: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBoneAxe
+  categories: [ ForkFiltered ]
+  name: "bone axe"
+  description: "A sharpened slab of bone bound to a handle."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/bone_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/bone_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/bone_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 17
+        Blunt: 6
+        Structural: 7
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 15
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalHandAxe
+  categories: [ ForkFiltered ]
+  name: "hand axe"
+  description: "A plain iron hand axe."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/hand_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/hand_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/hand_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 22
+        Blunt: 7
+        Structural: 9
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 60
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalWoodsmansAxe
+  categories: [ ForkFiltered ]
+  name: "woodsman's axe"
+  description: "A forester's axe with a curved, wrapped haft."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/woodsmans_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 24
+        Blunt: 8
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBeardedAxe
+  categories: [ ForkFiltered ]
+  name: "bearded axe"
+  description: "An axe whose blade hooks down below the head, good for pulling shields aside."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/bearded_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/bearded_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/bearded_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 24
+        Blunt: 8
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBattleAxe
+  categories: [ ForkFiltered ]
+  name: "battle axe"
+  description: "A one-handed war axe with a broad crescent blade."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/battle_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/battle_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/battle_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 24
+        Blunt: 8
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBroadAxe
+  categories: [ ForkFiltered ]
+  name: "broad axe"
+  description: "A wide-bladed axe on a grip wrapped in green cord."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/broad_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/broad_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/broad_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 26
+        Blunt: 9
+        Structural: 11
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalBlackenedWarAxe
+  categories: [ ForkFiltered ]
+  name: "blackened war axe"
+  description: "A fire-blackened horseman's war axe."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/blackened_war_axe.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/blackened_war_axe_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/blackened_war_axe_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 29
+        Blunt: 10
+        Structural: 12
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 260
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalHorsemansPick
+  categories: [ ForkFiltered ]
+  name: "horseman's pick"
+  description: "A war hammer with a long spike on the back for cracking helmets."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/horsemans_pick.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/horsemans_pick_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/horsemans_pick_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+        Piercing: 26
+        Blunt: 6
+        Structural: 15
+    soundHit:
+      path: /Audio/Weapons/genhit3.ogg
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalFrancisca
+  categories: [ ForkFiltered ]
+  name: "francisca"
+  description: "A Frankish throwing axe with a curved head. Works in the hand too."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/francisca.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/francisca_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/francisca_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 24
+        Blunt: 8
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: EWMedievalBaseWeapon
+  id: EWMedievalSilverHatchet
+  categories: [ ForkFiltered ]
+  name: "silver hatchet"
+  description: "A small axe with a silvered head."
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Medieval/Weapons/silver_hatchet.rsi
+    state: icon
+  - type: MedievalWeaponVisuals
+  - type: Item
+    size: Normal
+    sprite: _Emberwake/Medieval/Weapons/silver_hatchet_held.rsi
+  - type: Clothing
+    sprite: _Emberwake/Medieval/Weapons/silver_hatchet_held.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon
+    attackRate: 1.0
+    damage:
+      types:
+        Slash: 24
+        Blunt: 8
+        Structural: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Sharp
+  - type: StaticPrice
+    price: 180
