@@ -1,0 +1,143 @@
+- type: entity
+  parent: CP14ClothingOuterClothingChainmail
+  id: EWClothingOuterRingwatchHauberk
+  name: Ringwatch iron hauberk
+  description: Riveted iron rings hang in alternating rows from the shoulders to a split hem. A leather belt gathers the mail over a cloth lining.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/ringwatch_hauberk.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/ringwatch_hauberk.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Iron: 60
+      CP14Cloth: 20
+      CP14Leather: 12
+  - type: StaticPrice
+    price: 170
+
+- type: entity
+  parent: CP14ClothingHeadBase
+  id: EWClothingHeadRingwatchCoif
+  name: Ringwatch mail coif
+  description: A hood of fine iron rings with a short bib at the throat. A strip of wine-colored cloth keeps the links from rubbing the cheeks.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/ringwatch_coif.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/ringwatch_coif.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.96
+        Slash: 0.90
+        Piercing: 0.95
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Iron: 20
+      CP14Cloth: 10
+  - type: StaticPrice
+    price: 55
+
+- type: entity
+  parent: CP14ClothingOuterClothingInfantryCuirass
+  id: EWClothingOuterGatewardPlate
+  name: Gateward plate harness
+  description: A ridge divides the iron breastplate, with a brass lip rolled around each shoulder. Articulated plates hang from the waist on hide straps.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/gateward_plate.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/gateward_plate.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.70
+        Piercing: 0.72
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Iron: 90
+      CP14Brass: 10
+      CP14Leather: 24
+  - type: StaticPrice
+    price: 280
+
+- type: entity
+  parent: CP14ClothingHeadBascinet
+  id: EWClothingHeadGatewardSallet
+  name: Gateward iron sallet
+  description: A swept iron skull guards the nape. Brass pins hold the raised visor clear of the eyes.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/gateward_sallet.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/gateward_sallet.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Iron: 30
+      CP14Brass: 10
+      CP14Leather: 12
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterTideglassLamellar
+  name: Tideglass mithril lamellar
+  description: Rows of blue-green mithril plates are laced to one another over a hide lining. The rows slide as the wearer bends.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/tideglass_lamellar.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/tideglass_lamellar.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.84
+        Slash: 0.76
+        Piercing: 0.81
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
+  - type: CP14MagicManacostModify
+    globalModifier: 1.05
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Mithril: 50
+      CP14Leather: 24
+      CP14Cloth: 10
+  - type: StaticPrice
+    price: 340
+
+- type: entity
+  parent: CP14ClothingHeadBase
+  id: EWClothingHeadTideglassHelm
+  name: Tideglass mithril helm
+  description: Laced panels of sea-green mithril overlap at the crown. Short temple guards follow the jaw and leave the face open.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/tideglass_helm.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/tideglass_helm.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.92
+        Slash: 0.90
+        Piercing: 0.93
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Mithril: 20
+      CP14Leather: 12
+  - type: StaticPrice
+    price: 140

@@ -1,0 +1,93 @@
+- type: cp14TradingPosition
+  id: EWClothingOuterWayfarerJack
+  faction: Tailors
+  uiPosition: 10
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/wayfarer_jack.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingOuterWayfarerJack
+
+- type: cp14TradingPosition
+  id: EWClothingHeadWayfarerCap
+  faction: Tailors
+  uiPosition: 11
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/wayfarer_cap.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingHeadWayfarerCap
+
+- type: cp14TradingPosition
+  id: EWClothingOuterRingwatchHauberk
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 6
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/ringwatch_hauberk.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingOuterRingwatchHauberk
+
+- type: cp14TradingPosition
+  id: EWClothingHeadRingwatchCoif
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 7
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/ringwatch_coif.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingHeadRingwatchCoif
+
+- type: cp14TradingPosition
+  id: EWClothingOuterGatewardPlate
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 8
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/gateward_plate.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingOuterGatewardPlate
+
+- type: cp14TradingPosition
+  id: EWClothingHeadGatewardSallet
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 9
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/gateward_sallet.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingHeadGatewardSallet
+
+- type: cp14TradingPosition
+  id: EWClothingOuterTideglassLamellar
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 10
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/tideglass_lamellar.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingOuterTideglassLamellar
+
+- type: cp14TradingPosition
+  id: EWClothingHeadTideglassHelm
+  faction: HelmirChild
+  reputationLevel: 1
+  uiPosition: 11
+  priceMarkup: 3
+  icon:
+    sprite: _Emberwake/Clothing/tideglass_helm.rsi
+    state: icon
+  service: !type:CP14BuyItemsService
+    product: EWClothingHeadTideglassHelm
