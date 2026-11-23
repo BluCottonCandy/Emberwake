@@ -1,0 +1,49 @@
+- type: entity
+  parent: CP14ClothingOuterClothingBase
+  id: EWClothingOuterWayfarerJack
+  name: wayfarer's leather jack
+  description: A boiled-leather breastplate with a chevron pressed into the hide. A cross-body strap holds a fur-lined guard over the left shoulder, and split panels hang from the belt to protect the thighs.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/wayfarer_jack.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/wayfarer_jack.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.85
+        Piercing: 0.95
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Leather: 72
+      CP14Cloth: 20
+      CP14Iron: 2
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: CP14ClothingHeadBase
+  id: EWClothingHeadWayfarerCap
+  name: wayfarer's leather cap
+  description: Four panels of hardened hide meet at a raised seam along the crown. An iron rivet at each temple secures the reinforced brow and short cheek guards.
+  components:
+  - type: Sprite
+    sprite: _Emberwake/Clothing/wayfarer_cap.rsi
+  - type: Clothing
+    sprite: _Emberwake/Clothing/wayfarer_cap.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.96
+        Slash: 0.94
+        Piercing: 0.98
+  - type: PhysicalComposition
+    materialComposition:
+      CP14Leather: 24
+      CP14Cloth: 10
+  - type: StaticPrice
+    price: 40

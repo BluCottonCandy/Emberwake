@@ -1,0 +1,29 @@
+- type: CP14Recipe
+  id: EWClothingOuterWayfarerJack
+  tag: CP14RecipeLeatherWorking
+  category: LeatherWorking
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 6
+  - !type:ProtoIdResource
+    protoId: CP14String
+    count: 4
+  - !type:ProtoIdResource
+    protoId: CP14IronBuckle
+  result: EWClothingOuterWayfarerJack
+
+- type: CP14Recipe
+  id: EWClothingHeadWayfarerCap
+  tag: CP14RecipeLeatherWorking
+  category: LeatherWorking
+  craftTime: 4
+  requirements:
+  - !type:StackResource
+    stack: CP14Leather
+    count: 2
+  - !type:ProtoIdResource
+    protoId: CP14String
+    count: 2
+  result: EWClothingHeadWayfarerCap

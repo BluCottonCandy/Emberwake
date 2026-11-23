@@ -1,0 +1,95 @@
+- type: CP14Recipe
+  id: EWClothingOuterRingwatchHauberk
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 12
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 6
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 2
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWClothingOuterRingwatchHauberk
+
+- type: CP14Recipe
+  id: EWClothingHeadRingwatchCoif
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 6
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 2
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWClothingHeadRingwatchCoif
+
+- type: CP14Recipe
+  id: EWClothingOuterGatewardPlate
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 16
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 9
+  - !type:StackResource
+    stack: CP14BrassBar
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 2
+  result: EWClothingOuterGatewardPlate
+
+- type: CP14Recipe
+  id: EWClothingHeadGatewardSallet
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 8
+  requirements:
+  - !type:StackResource
+    stack: CP14IronBar
+    count: 3
+  - !type:StackResource
+    stack: CP14BrassBar
+    count: 1
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWClothingHeadGatewardSallet
+
+- type: CP14Recipe
+  id: EWClothingOuterTideglassLamellar
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 14
+  requirements:
+  - !type:StackResource
+    stack: CP14MithrilBar
+    count: 5
+  - !type:StackResource
+    stack: CP14Leather
+    count: 2
+  - !type:StackResource
+    stack: CP14Cloth
+    count: 1
+  result: EWClothingOuterTideglassLamellar
+
+- type: CP14Recipe
+  id: EWClothingHeadTideglassHelm
+  tag: CP14RecipeAnvil
+  category: Armor
+  craftTime: 7
+  requirements:
+  - !type:StackResource
+    stack: CP14MithrilBar
+    count: 2
+  - !type:StackResource
+    stack: CP14Leather
+    count: 1
+  result: EWClothingHeadTideglassHelm
